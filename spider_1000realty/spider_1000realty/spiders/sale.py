@@ -4,7 +4,12 @@ import time
 import re
 from spider_1000realty.items import Spider1000RealtyItem
 
-ADDR_RE = [ur"(?P<street>\w*\W+), (?P<house_number>[буд.майд№ ]*\d+[/а-яА-Я\\-]*\d*[а-яА-я/]*), (?P<area>\W+\w*), (?P<district>\W+\w*), (?P<city>Киев)", ur"(?P<street>\w*\W+), (?P<house_number>[буд.майд№ ]*\d+[/а-яА-Я\\-]*\d*[а-яА-я/]*), (?P<city>Киев)", ur"(?P<street>\w*\W+), (?P<area>\W+\w*), (?P<district>\W+\w*), (?P<city>Киев)", ur"(?P<street>\w*\W+), (?P<house_number>[буд.майд№ ]*\d+[/а-яА-Я\\-]*\d*[а-яА-я/]*), (?P<area>\W+\w*), (?P<city>Киев)"]
+ADDR_RE = [
+ur"(?P<street>\w*\W+), (?P<house_number>[буд.майд№ ]*\d+[/а-яА-Я\\-]*\d*[а-яА-я/]*), (?P<area>\W+\w*), (?P<city>Киев)", 
+ur"(?P<street>\w*\W+), (?P<house_number>[буд.майд№ ]*\d+[/а-яА-Я\\-]*\d*[а-яА-я/]*), (?P<area>\W+\w*), (?P<district>\W+\w*), (?P<city>Киев)", 
+ur"(?P<street>\w*\W+), (?P<house_number>[буд.майд№ ]*\d+[/а-яА-Я\\-]*\d*[а-яА-я/]*), (?P<city>Киев)", 
+ur"(?P<street>\w*\W+), (?P<area>\W+\w*), (?P<district>\W+\w*), (?P<city>Киев)"
+]
 
 class SaleSpider(scrapy.Spider):
     custom_settings = {
