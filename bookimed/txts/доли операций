@@ -1,0 +1,59 @@
+Рак кожи:
+Total: 10, train: 9, test: 1
+Residual sum of squares: 0.01
+Train absolute: 0.34
+Test absolute: 0.12
+Absolute to mean: 1.68%
+Train variance score: 0.82
+Test variance score: 0.00
+
+
+Real: 10.000000 	 Predicted: 10.107295
+Real: 8.000000 	 Predicted: 7.767408
+Real: 8.000000 	 Predicted: 8.642206
+Real: 7.000000 	 Predicted: 7.117856
+Real: 10.000000 	 Predicted: 9.161378
+Real: 7.000000 	 Predicted: 7.117856
+Real: 8.000000 	 Predicted: 7.536152
+Real: 8.000000 	 Predicted: 8.522854
+Real: 7.000000 	 Predicted: 7.117856
+Real: 8.000000 	 Predicted: 8.026994
+
+Features sorted by their score:
+7.11785642144
+4
+1.181400 	 doc_top_diag
+0.030700 	 doc_gen_diag
+0.000000 	 doc_top_oper
+0.259600 	 doc_gen_oper
+
+Рак шейки матки
+
+Total: 10, train: 9, test: 1
+Residual sum of squares: 0.15
+Train absolute: 0.41
+Test absolute: 0.39
+Absolute to mean: 4.89%
+Train variance score: 0.76
+Test variance score: 0.00
+
+Real: 10.000000 	 Predicted: 9.417631
+Real: 8.000000 	 Predicted: 8.491909
+Real: 8.000000 	 Predicted: 8.473935
+Real: 8.000000 	 Predicted: 7.528522
+Real: 8.000000 	 Predicted: 7.609128
+Real: 8.000000 	 Predicted: 7.609128
+Real: 7.000000 	 Predicted: 7.746720
+Real: 8.000000 	 Predicted: 7.609128
+Real: 10.000000 	 Predicted: 10.002919
+Real: 8.000000 	 Predicted: 8.120109
+
+
+
+Features sorted by their score:
+7.11785642144
+4
+1.181400 	 doc_top_diag
+0.030700 	 doc_gen_diag
+0.000000 	 doc_top_oper
+0.259600 	 doc_gen_oper
