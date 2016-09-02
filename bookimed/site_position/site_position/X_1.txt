@@ -1,0 +1,332 @@
+2016-09-02 16:40:52 [scrapy] INFO: Scrapy 1.1.0 started (bot: site_position)
+2016-09-02 16:40:52 [scrapy] INFO: Overridden settings: {'NEWSPIDER_MODULE': 'site_position.spiders', 'ROBOTSTXT_OBEY': True, 'SPIDER_MODULES': ['site_position.spiders'], 'LOG_FILE': 'X_1.txt', 'BOT_NAME': 'site_position'}
+2016-09-02 16:40:52 [scrapy] INFO: Enabled extensions:
+['scrapy.extensions.logstats.LogStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.corestats.CoreStats']
+2016-09-02 16:40:52 [scrapy] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.chunked.ChunkedTransferMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2016-09-02 16:40:52 [scrapy] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2016-09-02 16:40:52 [scrapy] INFO: Enabled item pipelines:
+[]
+2016-09-02 16:40:52 [scrapy] INFO: Spider opened
+2016-09-02 16:40:52 [scrapy] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2016-09-02 16:40:52 [scrapy] DEBUG: Telnet console listening on 127.0.0.1:6023
+2016-09-02 16:40:52 [scrapy] DEBUG: Crawled (200) <GET http://ru.bookimed.com/robots.txt> (referer: None)
+2016-09-02 16:40:53 [scrapy] DEBUG: Crawled (200) <GET http://ru.bookimed.com/clinics/illness=melanoma/> (referer: None)
+2016-09-02 16:40:54 [scrapy] DEBUG: Scraped from <200 http://ru.bookimed.com/clinics/illness=melanoma/>
+{'name': u'\u041e\u043d\u043a\u043e\u043b\u043e\u0433\u0438\u0447\u0435\u0441\u043a\u0438\u0439 \u0446\u0435\u043d\u0442\u0440 \u0411\u043e\u043b\u044c\u043d\u0438\u0446\u044b Liv Hospital'}
+2016-09-02 16:40:54 [scrapy] DEBUG: Scraped from <200 http://ru.bookimed.com/clinics/illness=melanoma/>
+{'name': u'\u041e\u0442\u0434\u0435\u043b\u0435\u043d\u0438\u0435 \u0440\u0430\u043a\u0430 \u041a\u043b\u0438\u043d\u0438\u043a\u0438 \u041c\u0435\u043b\u0430\u043d\u043e\u043c\u0430 \u042e\u043d\u0438\u0442'}
+2016-09-02 16:40:54 [scrapy] DEBUG: Scraped from <200 http://ru.bookimed.com/clinics/illness=melanoma/>
+{'name': u'\u041e\u043d\u043a\u043e\u043b\u043e\u0433\u0438\u0447\u0435\u0441\u043a\u0438\u0439 \u0446\u0435\u043d\u0442\u0440 \u041a\u043b\u0438\u043d\u0438\u043a\u0438 \u0423\u043d\u0438\u0432\u0435\u0440\u0441\u0438\u0442\u0435\u0442\u0430 \u0438\u043c\u0435\u043d\u0438 \u041b\u044e\u0434\u0432\u0438\u0433\u0430 \u041c\u0430\u043a\u0441\u0438\u043c\u0438\u043b\u0438\u0430\u043d\u0430 \u0432 \u041c\u044e\u043d\u0445\u0435\u043d\u0435'}
+2016-09-02 16:40:54 [scrapy] DEBUG: Scraped from <200 http://ru.bookimed.com/clinics/illness=melanoma/>
+{'name': u'\u041e\u043d\u043a\u043e\u043b\u043e\u0433\u0438\u0447\u0435\u0441\u043a\u0438\u0439 \u0446\u0435\u043d\u0442\u0440 \u0423\u043d\u0438\u0432\u0435\u0440\u0441\u0438\u0442\u0435\u0442\u0441\u043a\u043e\u0433\u043e \u043c\u0435\u0434\u0438\u0446\u0438\u043d\u0441\u043a\u043e\u0433\u043e \u0446\u0435\u043d\u0442\u0440\u0430 \u0432 \u041f\u0440\u0438\u043d\u0441\u0442\u043e\u043d\u0435'}
+2016-09-02 16:40:54 [scrapy] DEBUG: Scraped from <200 http://ru.bookimed.com/clinics/illness=melanoma/>
+{'name': u'\u041e\u043d\u043a\u043e\u043b\u043e\u0433\u0438\u0447\u0435\u0441\u043a\u0438\u0439 \u0446\u0435\u043d\u0442\u0440 \u0418\u043d\u0441\u0442\u0438\u0442\u0443\u0442\u0430 \u043c\u0435\u0434\u0438\u0446\u0438\u043d\u044b \u041c\u0435\u0434\u0430\u043d\u0442\u0430'}
+2016-09-02 16:40:54 [scrapy] DEBUG: Scraped from <200 http://ru.bookimed.com/clinics/illness=melanoma/>
+{'name': u'\u041e\u043d\u043a\u043e\u043b\u043e\u0433\u0438\u0447\u0435\u0441\u043a\u0438\u0439 \u0446\u0435\u043d\u0442\u0440 \u041c\u0435\u0434\u0438\u0446\u0438\u043d\u0441\u043a\u043e\u0433\u043e \u0426\u0435\u043d\u0442\u0440\u0430 \u0410\u043d\u0430\u0434\u043e\u043b\u0443 (Anadolu)'}
+2016-09-02 16:40:54 [scrapy] DEBUG: Scraped from <200 http://ru.bookimed.com/clinics/illness=melanoma/>
+{'name': u'\u041e\u0442\u0434\u0435\u043b\u0435\u043d\u0438\u0435 \u0440\u0430\u043a\u0430 \u041c\u0435\u0434\u0438\u0446\u0438\u043d\u0441\u043a\u043e\u0433\u043e \u0446\u0435\u043d\u0442\u0440\u0430 \u0438\u043c. \u0421\u0443\u0440\u0430\u0441\u043a\u0438 (\u0418\u0445\u0438\u043b\u043e\u0432)'}
+2016-09-02 16:40:54 [scrapy] DEBUG: Scraped from <200 http://ru.bookimed.com/clinics/illness=melanoma/>
+{'name': u'\u041e\u043d\u043a\u043e\u043b\u043e\u0433\u0438\u0447\u0435\u0441\u043a\u0438\u0439 \u0446\u0435\u043d\u0442\u0440 \u041a\u043b\u0438\u043d\u0438\u043a\u0438 \u0425\u0435\u043b\u0438\u043e\u0441'}
+2016-09-02 16:40:54 [scrapy] DEBUG: Scraped from <200 http://ru.bookimed.com/clinics/illness=melanoma/>
+{'name': u'\u041e\u043d\u043a\u043e\u043b\u043e\u0433\u0438\u0447\u0435\u0441\u043a\u0438\u0439 \u0446\u0435\u043d\u0442\u0440 \u0423\u043d\u0438\u0432\u0435\u0440\u0441\u0438\u0442\u0435\u0442\u0441\u043a\u043e\u0433\u043e \u0413\u043e\u0441\u043f\u0438\u0442\u0430\u043b\u044f Medipol'}
+2016-09-02 16:40:54 [scrapy] DEBUG: Scraped from <200 http://ru.bookimed.com/clinics/illness=melanoma/>
+{'name': u'\u041e\u043d\u043a\u043e\u043b\u043e\u0433\u0438\u0447\u0435\u0441\u043a\u0438\u0439 \u0446\u0435\u043d\u0442\u0440 \u0411\u043e\u043b\u044c\u043d\u0438\u0446\u044b \u0413\u0438\u043b\u044c \u041c\u0435\u0434\u0438\u0446\u0438\u043d\u0441\u043a\u043e\u0433\u043e \u0423\u043d\u0438\u0432\u0435\u0440\u0441\u0438\u0442\u0435\u0442\u0430 \u0413\u0430\u0447\u043e\u043d'}
+2016-09-02 16:40:54 [scrapy] DEBUG: Crawled (200) <GET http://ru.bookimed.com/clinics/illness=melanoma/page=2/> (referer: http://ru.bookimed.com/clinics/illness=melanoma/)
+2016-09-02 16:40:54 [scrapy] DEBUG: Scraped from <200 http://ru.bookimed.com/clinics/illness=melanoma/page=2/>
+{'name': u'\u041e\u043d\u043a\u043e\u043b\u043e\u0433\u0438\u0447\u0435\u0441\u043a\u0438\u0439 \u0446\u0435\u043d\u0442\u0440 \u0421\u0435\u0442\u0438 \u043a\u043b\u0438\u043d\u0438\u043a \u041c\u0430\u043d\u0438\u043f\u0430\u043b ( Manipal Hospitals )'}
+2016-09-02 16:40:54 [scrapy] DEBUG: Scraped from <200 http://ru.bookimed.com/clinics/illness=melanoma/page=2/>
+{'name': u'\u041e\u043d\u043a\u043e\u043b\u043e\u0433\u0438\u0447\u0435\u0441\u043a\u0438\u0439 \u0446\u0435\u043d\u0442\u0440 \u041c\u0435\u0436\u0434\u0443\u043d\u0430\u0440\u043e\u0434\u043d\u043e\u0433\u043e \u043c\u0435\u0434\u0438\u0446\u0438\u043d\u0441\u043a\u043e\u0433\u043e \u0446\u0435\u043d\u0442\u0440\u0430 \xab\u0412\u0438\u0432\u0430\u043d\u0442\u0435\u0441\xbb (\u0411\u0435\u0440\u043b\u0438\u043d)'}
+2016-09-02 16:40:54 [scrapy] DEBUG: Scraped from <200 http://ru.bookimed.com/clinics/illness=melanoma/page=2/>
+{'name': u'\u041e\u0442\u0434\u0435\u043b\u0435\u043d\u0438\u0435 \u0440\u0430\u043a\u0430 \u0417\u043e\u043b\u0438\u043d\u0433\u0435\u043d\u0430 \u0430\u043a\u0430\u0434\u0435\u043c\u0438\u0447\u0435\u0441\u043a\u043e\u0439 \u0431\u043e\u043b\u044c\u043d\u0438\u0446\u044b \u0443\u043d\u0438\u0432\u0435\u0440\u0441\u0438\u0442\u0435\u0442\u0430 \u041a\u0451\u043b\u044c\u043d'}
+2016-09-02 16:40:54 [scrapy] DEBUG: Scraped from <200 http://ru.bookimed.com/clinics/illness=melanoma/page=2/>
+{'name': u'\u041e\u043d\u043a\u043e\u043b\u043e\u0433\u0438\u0447\u0435\u0441\u043a\u0438\u0439 \u0446\u0435\u043d\u0442\u0440 \u0421\u0435\u0442\u0438 \u0431\u043e\u043b\u044c\u043d\u0438\u0446 Memorial'}
+2016-09-02 16:40:54 [scrapy] DEBUG: Scraped from <200 http://ru.bookimed.com/clinics/illness=melanoma/page=2/>
+{'name': u'\u041e\u043d\u043a\u043e\u043b\u043e\u0433\u0438\u0447\u0435\u0441\u043a\u0438\u0439 \u0446\u0435\u043d\u0442\u0440 C\u0435\u0442\u0438 \u0447\u0430\u0441\u0442\u043d\u044b\u0445 \u043a\u043b\u0438\u043d\u0438\u043a \u0410\u0441\u043a\u043b\u0435\u043f\u0438\u043e\u0441'}
+2016-09-02 16:40:54 [scrapy] DEBUG: Scraped from <200 http://ru.bookimed.com/clinics/illness=melanoma/page=2/>
+{'name': u'\u041e\u043d\u043a\u043e\u043b\u043e\u0433\u0438\u0447\u0435\u0441\u043a\u0438\u0439 \u0446\u0435\u043d\u0442\u0440 \u0421\u0435\u0442\u0438 \u0431\u043e\u043b\u044c\u043d\u0438\u0446 Medicana'}
+2016-09-02 16:40:54 [scrapy] DEBUG: Scraped from <200 http://ru.bookimed.com/clinics/illness=melanoma/page=2/>
+{'name': u'\u041e\u0442\u0434\u0435\u043b\u0435\u043d\u0438\u0435 \u0440\u0430\u043a\u0430 \u0423\u043d\u0438\u0432\u0435\u0440\u0441\u0438\u0442\u0435\u0442\u0441\u043a\u043e\u0433\u043e \u0413\u043e\u0441\u043f\u0438\u0442\u0430\u043b\u044f Yeditepe'}
+2016-09-02 16:40:54 [scrapy] DEBUG: Scraped from <200 http://ru.bookimed.com/clinics/illness=melanoma/page=2/>
+{'name': u'\u041e\u043d\u043a\u043e\u043b\u043e\u0433\u0438\u0447\u0435\u0441\u043a\u0438\u0439 \u0446\u0435\u043d\u0442\u0440 \u041a\u043b\u0438\u043d\u0438\u043a\u0438 \u0428\u0430\u0440\u0438\u0442\u0435'}
+2016-09-02 16:40:54 [scrapy] DEBUG: Scraped from <200 http://ru.bookimed.com/clinics/illness=melanoma/page=2/>
+{'name': u'\u041e\u043d\u043a\u043e\u043b\u043e\u0433\u0438\u0447\u0435\u0441\u043a\u0438\u0439 \u0446\u0435\u043d\u0442\u0440 \u0421\u0435\u0442\u0438 \u0431\u043e\u043b\u044c\u043d\u0438\u0446 Ac\u0131badem'}
+2016-09-02 16:40:54 [scrapy] DEBUG: Scraped from <200 http://ru.bookimed.com/clinics/illness=melanoma/page=2/>
+{'name': u'\u041e\u043d\u043a\u043e\u043b\u043e\u0433\u0438\u0447\u0435\u0441\u043a\u0438\u0439 \u0446\u0435\u043d\u0442\u0440 \u041a\u043b\u0438\u043d\u0438\u043a\u0438 \u0410\u0441\u0441\u0443\u0442\u0430'}
+2016-09-02 16:40:54 [scrapy] DEBUG: Crawled (200) <GET http://ru.bookimed.com/clinics/illness=melanoma/page=3/> (referer: http://ru.bookimed.com/clinics/illness=melanoma/page=2/)
+2016-09-02 16:40:55 [scrapy] DEBUG: Scraped from <200 http://ru.bookimed.com/clinics/illness=melanoma/page=3/>
+{'name': u'\u041e\u043d\u043a\u043e\u043b\u043e\u0433\u0438\u0447\u0435\u0441\u043a\u0438\u0439 \u0446\u0435\u043d\u0442\u0440 \u0413\u043e\u0441\u043f\u0438\u0442\u0430\u043b\u044f \u0410\u043f\u043e\u043b\u043b\u043e'}
+2016-09-02 16:40:55 [scrapy] DEBUG: Scraped from <200 http://ru.bookimed.com/clinics/illness=melanoma/page=3/>
+{'name': u'\u041e\u043d\u043a\u043e\u043b\u043e\u0433\u0438\u0447\u0435\u0441\u043a\u0438\u0439 \u0446\u0435\u043d\u0442\u0440 \u041c\u0435\u0434\u0438\u0446\u0438\u043d\u0441\u043a\u043e\u0433\u043e \u0446\u0435\u043d\u0442\u0440\u0430 \u0420\u0430\u043c\u0431\u0430\u043c'}
+2016-09-02 16:40:55 [scrapy] DEBUG: Scraped from <200 http://ru.bookimed.com/clinics/illness=melanoma/page=3/>
+{'name': u'\u041e\u043d\u043a\u043e\u043b\u043e\u0433\u0438\u0447\u0435\u0441\u043a\u0438\u0439 \u0446\u0435\u043d\u0442\u0440 \u0423\u043d\u0438\u0432\u0435\u0440\u0441\u0438\u0442\u0435\u0442\u0441\u043a\u043e\u0439 \u043a\u043b\u0438\u043d\u0438\u043a\u0438 \u0432 \u041a\u0440\u0430\u043a\u043e\u0432\u0435'}
+2016-09-02 16:40:55 [scrapy] DEBUG: Scraped from <200 http://ru.bookimed.com/clinics/illness=melanoma/page=3/>
+{'name': u'\u041e\u043d\u043a\u043e\u043b\u043e\u0433\u0438\u0447\u0435\u0441\u043a\u0438\u0439 \u0446\u0435\u043d\u0442\u0440 \u0411\u043e\u043b\u044c\u043d\u0438\u0446\u044b \u0438\u043c. \u0425\u0430\u0438\u043c\u0430 \u0428\u0438\u0431\u0430'}
+2016-09-02 16:40:55 [scrapy] DEBUG: Scraped from <200 http://ru.bookimed.com/clinics/illness=melanoma/page=3/>
+{'name': u'\u041e\u043d\u043a\u043e\u043b\u043e\u0433\u0438\u0447\u0435\u0441\u043a\u0438\u0439 \u0446\u0435\u043d\u0442\u0440 \u0423\u043d\u0438\u0432\u0435\u0440\u0441\u0438\u0442\u0435\u0442\u0441\u043a\u043e\u0439 \u043a\u043b\u0438\u043d\u0438\u043a\u0438 \u0432 \u0414\u044e\u0441\u0441\u0435\u043b\u044c\u0434\u043e\u0440\u0444\u0435'}
+2016-09-02 16:40:55 [scrapy] DEBUG: Scraped from <200 http://ru.bookimed.com/clinics/illness=melanoma/page=3/>
+{'name': u'\u041e\u0442\u0434\u0435\u043b\u0435\u043d\u0438\u0435 \u0440\u0430\u043a\u0430 \u0412\u0435\u043d\u0441\u043a\u043e\u0439 \u0447\u0430\u0441\u0442\u043d\u043e\u0439 \u043a\u043b\u0438\u043d\u0438\u043a\u0438'}
+2016-09-02 16:40:55 [scrapy] DEBUG: Scraped from <200 http://ru.bookimed.com/clinics/illness=melanoma/page=3/>
+{'name': u'\u041e\u043d\u043a\u043e\u043b\u043e\u0433\u0438\u0447\u0435\u0441\u043a\u0438\u0439 \u0446\u0435\u043d\u0442\u0440 \u041c\u0435\u0434\u0438\u0446\u0438\u043d\u0441\u043a\u043e\u0433\u043e \u0446\u0435\u043d\u0442\u0440\u0430 \u0438\u043c\u0435\u043d\u0438 \u0418\u0446\u0445\u0430\u043a\u0430 \u0420\u0430\u0431\u0438\u043d\u0430'}
+2016-09-02 16:40:55 [scrapy] DEBUG: Scraped from <200 http://ru.bookimed.com/clinics/illness=melanoma/page=3/>
+{'name': u'\u041e\u0442\u0434\u0435\u043b\u0435\u043d\u0438\u0435 \u0440\u0430\u043a\u0430 \u0413\u043e\u0441\u043f\u0438\u0442\u0430\u043b\u044f \u0414\u0436\u043e\u043d\u0441\u0430 \u0425\u043e\u043f\u043a\u0438\u043d\u0441\u0430'}
+2016-09-02 16:40:55 [scrapy] DEBUG: Scraped from <200 http://ru.bookimed.com/clinics/illness=melanoma/page=3/>
+{'name': u'\u041e\u043d\u043a\u043e\u043b\u043e\u0433\u0438\u0447\u0435\u0441\u043a\u0438\u0439 \u0446\u0435\u043d\u0442\u0440 \u0423\u043d\u0438\u0432\u0435\u0440\u0441\u0438\u0442\u0435\u0442\u0441\u043a\u043e\u0439 \u043a\u043b\u0438\u043d\u0438\u043a\u0438, \u0433.\u0424\u0440\u0430\u0439\u0431\u0443\u0440\u0433'}
+2016-09-02 16:40:55 [scrapy] DEBUG: Scraped from <200 http://ru.bookimed.com/clinics/illness=melanoma/page=3/>
+{'name': u'\u041e\u0442\u0434\u0435\u043b\u0435\u043d\u0438\u0435 \u0440\u0430\u043a\u0430 \u041a\u043b\u0438\u043d\u0438\u043a\u0438 \u0422\u0430\u0440\u0442\u0443\u0441\u043a\u043e\u0433\u043e \u0443\u043d\u0438\u0432\u0435\u0440\u0441\u0438\u0442\u0435\u0442\u0430'}
+2016-09-02 16:40:55 [scrapy] DEBUG: Crawled (200) <GET http://ru.bookimed.com/clinics/illness=melanoma/page=4/> (referer: http://ru.bookimed.com/clinics/illness=melanoma/page=3/)
+2016-09-02 16:40:55 [scrapy] DEBUG: Scraped from <200 http://ru.bookimed.com/clinics/illness=melanoma/page=4/>
+{'name': u'\u041e\u0442\u0434\u0435\u043b\u0435\u043d\u0438\u0435 \u0440\u0430\u043a\u0430 \u041a\u043b\u0438\u043d\u0438\u043a\u0438 \u0424\u043e\u0440\u0442\u0438\u0441'}
+2016-09-02 16:40:55 [scrapy] DEBUG: Scraped from <200 http://ru.bookimed.com/clinics/illness=melanoma/page=4/>
+{'name': u'\u041e\u0442\u0434\u0435\u043b\u0435\u043d\u0438\u0435 \u0440\u0430\u043a\u0430 \u041c\u0435\u043c\u043e\u0440\u0438\u0430\u043b\u044c\u043d\u043e\u0433\u043e \u0433\u043e\u0441\u043f\u0438\u0442\u0430\u043b\u044f \u0422\u0430\u0442\u0430'}
+2016-09-02 16:40:55 [scrapy] DEBUG: Scraped from <200 http://ru.bookimed.com/clinics/illness=melanoma/page=4/>
+{'name': u'\u041e\u0442\u0434\u0435\u043b\u0435\u043d\u0438\u0435 \u0440\u0430\u043a\u0430 \u041c\u0435\u0434\u0438\u0446\u0438\u043d\u0441\u043a\u043e\u0433\u043e \u0446\u0435\u043d\u0442\u0440\u0430 \u0420\u0435\u0445\u0442\u0441 \u0434\u0435\u0440 \u0418\u0437\u0430\u0440'}
+2016-09-02 16:40:55 [scrapy] DEBUG: Scraped from <200 http://ru.bookimed.com/clinics/illness=melanoma/page=4/>
+{'name': u'\u041e\u0442\u0434\u0435\u043b\u0435\u043d\u0438\u0435 \u0440\u0430\u043a\u0430 \u0410\u043c\u0435\u0440\u0438\u043a\u0430\u043d\u0441\u043a\u043e\u0433\u043e \u0433\u043e\u0441\u043f\u0438\u0442\u0430\u043b\u044f \u0432 \u041f\u0430\u0440\u0438\u0436\u0435'}
+2016-09-02 16:40:55 [scrapy] DEBUG: Scraped from <200 http://ru.bookimed.com/clinics/illness=melanoma/page=4/>
+{'name': u'\u041e\u043d\u043a\u043e\u043b\u043e\u0433\u0438\u0447\u0435\u0441\u043a\u0438\u0439 \u0446\u0435\u043d\u0442\u0440 \u0423\u043d\u0438\u0432\u0435\u0440\u0441\u0438\u0442\u0435\u0442\u0441\u043a\u043e\u0439 \u043a\u043b\u0438\u043d\u0438\u043a\u0438 \u0410\u0430\u0445\u0435\u043d'}
+2016-09-02 16:40:55 [scrapy] DEBUG: Scraped from <200 http://ru.bookimed.com/clinics/illness=melanoma/page=4/>
+{'name': u'\u041e\u0442\u0434\u0435\u043b\u0435\u043d\u0438\u0435 \u0440\u0430\u043a\u0430 \u041c\u0435\u0434\u0438\u0446\u0438\u043d\u0441\u043a\u043e\u0433\u043e \u0446\u0435\u043d\u0442\u0440\u0430 \u0422\u0435\u043a\u043d\u043e\u043d'}
+2016-09-02 16:40:55 [scrapy] DEBUG: Scraped from <200 http://ru.bookimed.com/clinics/illness=melanoma/page=4/>
+{'name': u'\u041e\u043d\u043a\u043e\u043b\u043e\u0433\u0438\u0447\u0435\u0441\u043a\u0438\u0439 \u0446\u0435\u043d\u0442\u0440 \u0421\u0435\u0442\u0438 \u0431\u043e\u043b\u044c\u043d\u0438\u0446 Medical Park'}
+2016-09-02 16:40:55 [scrapy] DEBUG: Scraped from <200 http://ru.bookimed.com/clinics/illness=melanoma/page=4/>
+{'name': u'\u041e\u0442\u0434\u0435\u043b\u0435\u043d\u0438\u0435 \u0440\u0430\u043a\u0430 \u041a\u043b\u0438\u043d\u0438\u043a\u0438 \u041c\u0430\u043b\u0432\u0430\u0437\u0438\u043d\u043a\u0438'}
+2016-09-02 16:40:55 [scrapy] DEBUG: Scraped from <200 http://ru.bookimed.com/clinics/illness=melanoma/page=4/>
+{'name': u'\u041e\u043d\u043a\u043e\u043b\u043e\u0433\u0438\u0447\u0435\u0441\u043a\u0438\u0439 \u0446\u0435\u043d\u0442\u0440 \u0426\u0435\u043d\u0442\u0440\u0430\u043b\u044c\u043d\u043e\u0433\u043e \u0412\u0435\u043d\u0441\u043a\u043e\u0433\u043e \u041a\u043b\u0438\u043d\u0438\u0447\u0435\u0441\u043a\u043e\u0433\u043e \u0413\u043e\u0441\u043f\u0438\u0442\u0430\u043b\u044f'}
+2016-09-02 16:40:55 [scrapy] DEBUG: Scraped from <200 http://ru.bookimed.com/clinics/illness=melanoma/page=4/>
+{'name': u'\u041e\u0442\u0434\u0435\u043b\u0435\u043d\u0438\u0435 \u0440\u0430\u043a\u0430 \u0427\u0430\u0441\u0442\u043d\u043e\u0439 \u043a\u043b\u0438\u043d\u0438\u043a\u0438 \u0414\u0451\u0431\u043b\u0438\u043d\u0433'}
+2016-09-02 16:40:55 [scrapy] DEBUG: Crawled (200) <GET http://ru.bookimed.com/clinics/illness=melanoma/page=5/> (referer: http://ru.bookimed.com/clinics/illness=melanoma/page=4/)
+2016-09-02 16:40:55 [scrapy] DEBUG: Scraped from <200 http://ru.bookimed.com/clinics/illness=melanoma/page=5/>
+{'name': u'\u041e\u043d\u043a\u043e\u043b\u043e\u0433\u0438\u0447\u0435\u0441\u043a\u0438\u0439 \u0446\u0435\u043d\u0442\u0440 \u0423\u043d\u0438\u0432\u0435\u0440\u0441\u0438\u0442\u0435\u0442\u0441\u043a\u043e\u0439 \u041a\u043b\u0438\u043d\u0438\u043a\u0438 \u041a\u0430\u0440\u043b\u0430 \u0413\u0443\u0441\u0442\u0430\u0432\u0430 \u041a\u0430\u0440\u0443\u0441\u0430'}
+2016-09-02 16:40:55 [scrapy] DEBUG: Scraped from <200 http://ru.bookimed.com/clinics/illness=melanoma/page=5/>
+{'name': u'\u041e\u043d\u043a\u043e\u043b\u043e\u0433\u0438\u0447\u0435\u0441\u043a\u0438\u0439 \u0446\u0435\u043d\u0442\u0440 \u0427\u0430\u0441\u0442\u043d\u043e\u0439 \u043a\u043b\u0438\u043d\u0438\u043a\u0438 \xab\u0420\u0443\u0434\u043e\u043b\u044c\u0444\u0438\u043d\u0435\u0440\u0445\u0430\u0443\u0441\xbb'}
+2016-09-02 16:40:55 [scrapy] DEBUG: Scraped from <200 http://ru.bookimed.com/clinics/illness=melanoma/page=5/>
+{'name': u'\u041e\u043d\u043a\u043e\u043b\u043e\u0433\u0438\u0447\u0435\u0441\u043a\u0438\u0439 \u0446\u0435\u043d\u0442\u0440 \u0413\u0435\u0440\u0446\u043b\u0438\u044f \u041c\u0435\u0434\u0438\u043a\u0430\u043b \u0426\u0435\u043d\u0442\u0440\u0430'}
+2016-09-02 16:40:55 [scrapy] DEBUG: Scraped from <200 http://ru.bookimed.com/clinics/illness=melanoma/page=5/>
+{'name': u'\u041e\u0442\u0434\u0435\u043b\u0435\u043d\u0438\u0435 \u0440\u0430\u043a\u0430 \u0421\u0435\u0432\u0435\u0440\u043e-\u042d\u0441\u0442\u043e\u043d\u0441\u043a\u043e\u0439 \u0440\u0435\u0433\u0438\u043e\u043d\u0430\u043b\u044c\u043d\u043e\u0439 \u0431o\u043b\u044c\u043d\u0438\u0446\u044b'}
+2016-09-02 16:40:55 [scrapy] DEBUG: Scraped from <200 http://ru.bookimed.com/clinics/illness=melanoma/page=5/>
+{'name': u'\u041e\u043d\u043a\u043e\u043b\u043e\u0433\u0438\u0447\u0435\u0441\u043a\u0438\u0439 \u0446\u0435\u043d\u0442\u0440 \u041f\u0435\u0440\u0432\u043e\u0439 \u0447\u0430\u0441\u0442\u043d\u043e\u0439 \u043a\u043b\u0438\u043d\u0438\u043a\u0438 \u041f\u0440\u0430\u0433\u0438'}
+2016-09-02 16:40:55 [scrapy] DEBUG: Scraped from <200 http://ru.bookimed.com/clinics/illness=melanoma/page=5/>
+{'name': u'\u041e\u0442\u0434\u0435\u043b\u0435\u043d\u0438\u0435 \u0440\u0430\u043a\u0430 \u041a\u043b\u0438\u043d\u0438\u043a\u0438 \u0414\u0435\u0440\u043c\u0430\u0442\u043e\u043b\u043e\u0433\u0438\u0438'}
+2016-09-02 16:40:55 [scrapy] DEBUG: Scraped from <200 http://ru.bookimed.com/clinics/illness=melanoma/page=5/>
+{'name': u'\u041e\u043d\u043a\u043e\u043b\u043e\u0433\u0438\u0447\u0435\u0441\u043a\u0438\u0439 \u0446\u0435\u043d\u0442\u0440 \u041c\u0435\u0434\u0438\u0446\u0438\u043d\u0441\u043a\u043e\u0433\u043e \u0446\u0435\u043d\u0442\u0440\u0430 \u0421\u0430\u043c\u0441\u0443\u043d\u0433'}
+2016-09-02 16:40:55 [scrapy] DEBUG: Scraped from <200 http://ru.bookimed.com/clinics/illness=melanoma/page=5/>
+{'name': u'\u041e\u043d\u043a\u043e\u043b\u043e\u0433\u0438\u0447\u0435\u0441\u043a\u0438\u0439 \u0446\u0435\u043d\u0442\u0440 \u0418\u043d\u0441\u0442\u0438\u0442\u0443\u0442\u0430 \u0437\u0434\u043e\u0440\u043e\u0432\u044c\u044f \u0410\u0440\u0442\u0435\u043c\u0438\u0441'}
+2016-09-02 16:40:55 [scrapy] DEBUG: Scraped from <200 http://ru.bookimed.com/clinics/illness=melanoma/page=5/>
+{'name': u'\u041e\u0442\u0434\u0435\u043b\u0435\u043d\u0438\u0435 \u0440\u0430\u043a\u0430 \u041a\u043b\u0438\u043d\u0438\u043a\u0438 \u041a\u043b\u0438\u0432\u043b\u0435\u043d\u0434\u0430'}
+2016-09-02 16:40:55 [scrapy] DEBUG: Scraped from <200 http://ru.bookimed.com/clinics/illness=melanoma/page=5/>
+{'name': u'\u041e\u0442\u0434\u0435\u043b\u0435\u043d\u0438\u0435 \u0440\u0430\u043a\u0430 \u041a\u043b\u0438\u043d\u0438\u043a\u0438 \u0428\u043d\u0430\u0439\u0434\u0435\u0440 \u2014 \u0434\u0435\u0442\u0441\u043a\u043e\u0439 \u0431\u043e\u043b\u044c\u043d\u0438\u0446\u044b'}
+2016-09-02 16:40:56 [scrapy] DEBUG: Crawled (200) <GET http://ru.bookimed.com/clinics/illness=melanoma/page=6/> (referer: http://ru.bookimed.com/clinics/illness=melanoma/page=5/)
+2016-09-02 16:40:56 [scrapy] DEBUG: Scraped from <200 http://ru.bookimed.com/clinics/illness=melanoma/page=6/>
+{'name': u'\u041e\u0442\u0434\u0435\u043b\u0435\u043d\u0438\u0435 \u0440\u0430\u043a\u0430 \u0412\u0441\u0435\u0438\u043d\u0434\u0438\u0439\u0441\u043a\u043e\u0433\u043e \u0438\u043d\u0441\u0442\u0438\u0442\u0443\u0442\u0430 \u043c\u0435\u0434\u0438\u0446\u0438\u043d\u0441\u043a\u0438\u0445 \u043d\u0430\u0443\u043a'}
+2016-09-02 16:40:56 [scrapy] DEBUG: Scraped from <200 http://ru.bookimed.com/clinics/illness=melanoma/page=6/>
+{'name': u'\u041e\u0442\u0434\u0435\u043b\u0435\u043d\u0438\u0435 \u0440\u0430\u043a\u0430 \u041a\u0438\u0431\u0435\u0440 \u041a\u043b\u0438\u043d\u0438\u043a\u0438 \u0421\u043f\u0438\u0436\u0435\u043d\u043a\u043e'}
+2016-09-02 16:40:56 [scrapy] DEBUG: Scraped from <200 http://ru.bookimed.com/clinics/illness=melanoma/page=6/>
+{'name': u'\u041e\u043d\u043a\u043e\u043b\u043e\u0433\u0438\u0447\u0435\u0441\u043a\u0438\u0439 \u0446\u0435\u043d\u0442\u0440 \u041a\u043b\u0438\u043d\u0438\u043a\u0438 \u042d\u043b\u0438\u0448\u0430'}
+2016-09-02 16:40:56 [scrapy] DEBUG: Scraped from <200 http://ru.bookimed.com/clinics/illness=melanoma/page=6/>
+{'name': u'\u041e\u043d\u043a\u043e\u043b\u043e\u0433\u0438\u0447\u0435\u0441\u043a\u0438\u0439 \u0446\u0435\u043d\u0442\u0440 \u041c\u0435\u0434\u0438\u0446\u0438\u043d\u0441\u043a\u043e\u0433\u043e \u0446\u0435\u043d\u0442\u0440\u0430 \u0425\u0430\u0434\u0430\u0441\u0441\u0430'}
+2016-09-02 16:40:56 [scrapy] DEBUG: Scraped from <200 http://ru.bookimed.com/clinics/illness=melanoma/page=6/>
+{'name': u'\u041e\u0442\u0434\u0435\u043b\u0435\u043d\u0438\u0435 \u0440\u0430\u043a\u0430 \u0418\u0434\u0430-\u0422\u0430\u043b\u043b\u0438\u043d\u043d\u0441\u043a\u043e\u0439 \u0446\u0435\u043d\u0442\u0440\u0430\u043b\u044c\u043d\u043e\u0439 \u0431\u043e\u043b\u044c\u043d\u0438\u0446\u044b'}
+2016-09-02 16:40:56 [scrapy] DEBUG: Scraped from <200 http://ru.bookimed.com/clinics/illness=melanoma/page=6/>
+{'name': u'\u041e\u043d\u043a\u043e\u043b\u043e\u0433\u0438\u0447\u0435\u0441\u043a\u0438\u0439 \u0446\u0435\u043d\u0442\u0440 \u0423\u043d\u0438\u0432\u0435\u0440\u0441\u0438\u0442\u0435\u0442\u0441\u043a\u043e\u0439 \u043a\u043b\u0438\u043d\u0438\u043a\u0438 \u0432 \u0425a\u0439\u0434\u0435\u043b\u044c\u0431\u0435\u0440\u0433\u0435'}
+2016-09-02 16:40:56 [scrapy] DEBUG: Scraped from <200 http://ru.bookimed.com/clinics/illness=melanoma/page=6/>
+{'name': u'\u041e\u0442\u0434\u0435\u043b\u0435\u043d\u0438\u0435 \u0440\u0430\u043a\u0430 \u0411\u043e\u043b\u044c\u043d\u0438\u0446\u044b Florence Nightingale'}
+2016-09-02 16:40:56 [scrapy] DEBUG: Scraped from <200 http://ru.bookimed.com/clinics/illness=melanoma/page=6/>
+{'name': u'\u041e\u0442\u0434\u0435\u043b\u0435\u043d\u0438\u0435 \u0440\u0430\u043a\u0430 \u0413\u043e\u0441\u043f\u0438\u0442\u0430\u043b\u044f Kad\u0131koy Sifa'}
+2016-09-02 16:40:56 [scrapy] DEBUG: Scraped from <200 http://ru.bookimed.com/clinics/illness=melanoma/page=6/>
+{'name': u'\u041e\u0442\u0434\u0435\u043b\u0435\u043d\u0438\u0435 \u0440\u0430\u043a\u0430 \u041c\u0435\u0434\u0438\u0446\u0438\u043d\u0441\u043a\u043e\u0433\u043e \u0446\u0435\u043d\u0442\u0440\u0430 \u0434\u0438\u0430\u0433\u043d\u043e\u0441\u0442\u0438\u043a\u0438 \u0438 \u043b\u0435\u0447\u0435\u043d\u0438\u044f'}
+2016-09-02 16:40:56 [scrapy] DEBUG: Scraped from <200 http://ru.bookimed.com/clinics/illness=melanoma/page=6/>
+{'name': u'\u041e\u0442\u0434\u0435\u043b\u0435\u043d\u0438\u0435 \u0440\u0430\u043a\u0430 \u041c\u0435\u0434\u0438\u0446\u0438\u043d\u0441\u043a\u043e\u0433\u043e \u0446\u0435\u043d\u0442\u0440\u0430 \u0421\u043e\u0440\u043e\u043a\u0430'}
+2016-09-02 16:40:56 [scrapy] DEBUG: Crawled (200) <GET http://ru.bookimed.com/clinics/illness=melanoma/page=7/> (referer: http://ru.bookimed.com/clinics/illness=melanoma/page=6/)
+2016-09-02 16:40:56 [scrapy] DEBUG: Scraped from <200 http://ru.bookimed.com/clinics/illness=melanoma/page=7/>
+{'name': u'\u041e\u0442\u0434\u0435\u043b\u0435\u043d\u0438\u0435 \u0440\u0430\u043a\u0430 \u041a\u043b\u0438\u043d\u0438\u043a\u0438 \u0416\u0435\u043d\u0435\u0440\u0430\u043b\u044c-\u0411\u043e\u043b\u044c\u0451'}
+2016-09-02 16:40:56 [scrapy] DEBUG: Scraped from <200 http://ru.bookimed.com/clinics/illness=melanoma/page=7/>
+{'name': u'\u041e\u043d\u043a\u043e\u043b\u043e\u0433\u0438\u0447\u0435\u0441\u043a\u0438\u0439 \u0446\u0435\u043d\u0442\u0440 \u0423\u043d\u0438\u0432\u0435\u0440\u0441\u0438\u0442\u0435\u0442\u0441\u043a\u043e\u0439 \u043a\u043b\u0438\u043d\u0438\u043a\u0438 \u0424\u0440\u0430\u043d\u043a\u0444\u0443\u0440\u0442\u0430'}
+2016-09-02 16:40:56 [scrapy] DEBUG: Scraped from <200 http://ru.bookimed.com/clinics/illness=melanoma/page=7/>
+{'name': u'\u041e\u0442\u0434\u0435\u043b\u0435\u043d\u0438\u0435 \u0440\u0430\u043a\u0430 \u041c\u0435\u0434\u0438\u0446\u0438\u043d\u0441\u043a\u043e\u0433\u043e \u0446\u0435\u043d\u0442\u0440\u0430 \u041c\u0435\u0438\u0440'}
+2016-09-02 16:40:56 [scrapy] DEBUG: Scraped from <200 http://ru.bookimed.com/clinics/illness=melanoma/page=7/>
+{'name': u'\u041e\u0442\u0434\u0435\u043b\u0435\u043d\u0438\u0435 \u0440\u0430\u043a\u0430 \u041a\u043b\u0438\u043d\u0438\u043a\u0438 \u0412\u0438\u043b\u043b\u0430 \u0421\u0442\u044e\u0430\u0440\u0442'}
+2016-09-02 16:40:56 [scrapy] DEBUG: Scraped from <200 http://ru.bookimed.com/clinics/illness=melanoma/page=7/>
+{'name': u'\u041e\u0442\u0434\u0435\u043b\u0435\u043d\u0438\u0435 \u0440\u0430\u043a\u0430 \u041a\u043b\u0438\u043d\u0438\u043a\u0438 \u0414\u043e\u0440\u0442\u043c\u0443\u043d\u0434\u0430'}
+2016-09-02 16:40:56 [scrapy] DEBUG: Scraped from <200 http://ru.bookimed.com/clinics/illness=melanoma/page=7/>
+{'name': u'\u041e\u043d\u043a\u043e\u043b\u043e\u0433\u0438\u0447\u0435\u0441\u043a\u0438\u0439 \u0446\u0435\u043d\u0442\u0440 \u0423\u043d\u0438\u0432\u0435\u0440\u0441\u0438\u0442\u0435\u0442\u0441\u043a\u043e\u0439 \u043a\u043b\u0438\u043d\u0438\u043a\u0438 \u042d\u0440\u043b\u0430\u043d\u0433\u0435\u043d'}
+2016-09-02 16:40:56 [scrapy] DEBUG: Scraped from <200 http://ru.bookimed.com/clinics/illness=melanoma/page=7/>
+{'name': u'\u041e\u0442\u0434\u0435\u043b\u0435\u043d\u0438\u0435 \u0440\u0430\u043a\u0430 \u041c\u0435\u043c\u043e\u0440\u0438\u0430\u043b\u044c\u043d\u043e\u0433\u043e \u043e\u043d\u043a\u043e\u043b\u043e\u0433\u0438\u0447\u0435\u0441\u043a\u043e\u0433\u043e \u0446\u0435\u043d\u0442\u0440\u0430 \u0438\u043c. \u0421\u043b\u043e\u0443\u043d\u0430-\u041a\u0435\u0442\u0442\u0435\u0440\u0438\u043d\u0433\u0430'}
+2016-09-02 16:40:56 [scrapy] DEBUG: Scraped from <200 http://ru.bookimed.com/clinics/illness=melanoma/page=7/>
+{'name': u'\u041e\u0442\u0434\u0435\u043b\u0435\u043d\u0438\u0435 \u0440\u0430\u043a\u0430 \u041e\u043d\u043a\u043e\u043b\u043e\u0433\u0438\u0447\u0435\u0441\u043a\u043e\u0433\u043e \u0446\u0435\u043d\u0442\u0440\u0430 \u0410\u043d\u0434\u0435\u0440\u0441\u043e\u043d\u0430'}
+2016-09-02 16:40:56 [scrapy] DEBUG: Scraped from <200 http://ru.bookimed.com/clinics/illness=melanoma/page=7/>
+{'name': u'\u041e\u043d\u043a\u043e\u043b\u043e\u0433\u0438\u0447\u0435\u0441\u043a\u0438\u0439 \u0446\u0435\u043d\u0442\u0440 \u0413\u043e\u0441\u043f\u0438\u0442\u0430\u043b\u044f \u043f\u0440\u0438 \u0423\u043d\u0438\u0432\u0435\u0440\u0441\u0438\u0442\u0435\u0442\u0435 \u0418\u043d\u0445\u0430'}
+2016-09-02 16:40:56 [scrapy] DEBUG: Scraped from <200 http://ru.bookimed.com/clinics/illness=melanoma/page=7/>
+{'name': u'\u041e\u0442\u0434\u0435\u043b\u0435\u043d\u0438\u0435 \u0440\u0430\u043a\u0430 \u041a\u043b\u0438\u043d\u0438\u043a\u0438 \u041d\u043e\u0440\u0434\u0432\u0435\u0441\u0442'}
+2016-09-02 16:40:56 [scrapy] DEBUG: Crawled (200) <GET http://ru.bookimed.com/clinics/illness=melanoma/page=8/> (referer: http://ru.bookimed.com/clinics/illness=melanoma/page=7/)
+2016-09-02 16:40:56 [scrapy] DEBUG: Scraped from <200 http://ru.bookimed.com/clinics/illness=melanoma/page=8/>
+{'name': u'\u041e\u0442\u0434\u0435\u043b\u0435\u043d\u0438\u0435 \u0440\u0430\u043a\u0430 \u041c\u0435\u0434\u0438\u0446\u0438\u043d\u0441\u043a\u043e\u0433\u043e \u0446\u0435\u043d\u0442\u0440\u0430 \u042d\u043d\u0435\u043b-\u041c\u0435\u0434'}
+2016-09-02 16:40:56 [scrapy] DEBUG: Scraped from <200 http://ru.bookimed.com/clinics/illness=melanoma/page=8/>
+{'name': u'\u041e\u0442\u0434\u0435\u043b\u0435\u043d\u0438\u0435 \u0440\u0430\u043a\u0430 \u0420\u043e\u044f\u043b \u0411\u0440\u043e\u043c\u0442\u043e\u043d \u043a\u043b\u0438\u043d\u0438\u043a\u0438'}
+2016-09-02 16:40:56 [scrapy] DEBUG: Scraped from <200 http://ru.bookimed.com/clinics/illness=melanoma/page=8/>
+{'name': u'\u041e\u043d\u043a\u043e\u043b\u043e\u0433\u0438\u0447\u0435\u0441\u043a\u0438\u0439 \u0446\u0435\u043d\u0442\u0440 \u0423\u043d\u0438\u0432\u0435\u0440\u0441\u0438\u0442\u0435\u0442\u0441\u043a\u043e\u0439 \u043a\u043b\u0438\u043d\u0438\u043a\u0438 \u0413\u0438\u0441\u0441\u0435\u043d \u0438 \u041c\u0430\u0440\u0431\u0443\u0440\u0433\u0430'}
+2016-09-02 16:40:56 [scrapy] DEBUG: Scraped from <200 http://ru.bookimed.com/clinics/illness=melanoma/page=8/>
+{'name': u'\u041e\u0442\u0434\u0435\u043b\u0435\u043d\u0438\u0435 \u0440\u0430\u043a\u0430 \u0427\u0430\u0441\u0442\u043d\u043e\u0439 \u043a\u043b\u0438\u043d\u0438\u043a\u0438 \u0412\u0435\u0440\u043b\u0435'}
+2016-09-02 16:40:56 [scrapy] DEBUG: Scraped from <200 http://ru.bookimed.com/clinics/illness=melanoma/page=8/>
+{'name': u'\u041e\u0442\u0434\u0435\u043b\u0435\u043d\u0438\u0435 \u0440\u0430\u043a\u0430 \u041a\u043b\u0438\u043d\u0438\u043a\u0438 \u041c\u0430\u0433\u0434\u0435\u0431\u0443\u0440\u0433\u0430'}
+2016-09-02 16:40:56 [scrapy] DEBUG: Scraped from <200 http://ru.bookimed.com/clinics/illness=melanoma/page=8/>
+{'name': u'\u041e\u0442\u0434\u0435\u043b\u0435\u043d\u0438\u0435 \u0440\u0430\u043a\u0430 \u041a\u043b\u0438\u043d\u0438\u043a\u0438 \u0425\u0438\u0440\u0441\u043b\u0430\u043d\u0434\u0435\u043d'}
+2016-09-02 16:40:56 [scrapy] DEBUG: Scraped from <200 http://ru.bookimed.com/clinics/illness=melanoma/page=8/>
+{'name': u'\u041e\u043d\u043a\u043e\u043b\u043e\u0433\u0438\u0447\u0435\u0441\u043a\u0438\u0439 \u0446\u0435\u043d\u0442\u0440 \u041a\u043b\u0438\u043d\u0438\u043a\u0438 \u0421\u0435\u0432\u0435\u0440\u0430\u043d\u0438'}
+2016-09-02 16:40:56 [scrapy] DEBUG: Scraped from <200 http://ru.bookimed.com/clinics/illness=melanoma/page=8/>
+{'name': u'\u041e\u0442\u0434\u0435\u043b\u0435\u043d\u0438\u0435 \u0440\u0430\u043a\u0430 \u0411\u043e\u043b\u044c\u043d\u0438\u0446\u044b Western Hospital'}
+2016-09-02 16:40:56 [scrapy] DEBUG: Scraped from <200 http://ru.bookimed.com/clinics/illness=melanoma/page=8/>
+{'name': u'\u041e\u0442\u0434\u0435\u043b\u0435\u043d\u0438\u0435 \u0440\u0430\u043a\u0430 \u0421\u0435\u0442\u0438 \u0431\u043e\u043b\u044c\u043d\u0438\u0446 Universal'}
+2016-09-02 16:40:56 [scrapy] DEBUG: Scraped from <200 http://ru.bookimed.com/clinics/illness=melanoma/page=8/>
+{'name': u'\u041e\u0442\u0434\u0435\u043b\u0435\u043d\u0438\u0435 \u0440\u0430\u043a\u0430 \u0411\u043e\u043b\u044c\u043d\u0438\u0446\u044b \u0421\u0432\u044f\u0442\u043e\u0433\u043e \u0419\u043e\u0437\u0435\u0444\u0430'}
+2016-09-02 16:40:57 [scrapy] DEBUG: Crawled (200) <GET http://ru.bookimed.com/clinics/illness=melanoma/page=9/> (referer: http://ru.bookimed.com/clinics/illness=melanoma/page=8/)
+2016-09-02 16:40:57 [scrapy] DEBUG: Scraped from <200 http://ru.bookimed.com/clinics/illness=melanoma/page=9/>
+{'name': u'\u041e\u0442\u0434\u0435\u043b\u0435\u043d\u0438\u0435 \u0440\u0430\u043a\u0430 \u041c\u0435\u0434\u0438\u0446\u0438\u043d\u0441\u043a\u043e\u0433\u043e \u0446\u0435\u043d\u0442\u0440\u0430 \u041a\u0430\u043f\u043b\u0430\u043d'}
+2016-09-02 16:40:57 [scrapy] DEBUG: Scraped from <200 http://ru.bookimed.com/clinics/illness=melanoma/page=9/>
+{'name': u'\u041e\u0442\u0434\u0435\u043b\u0435\u043d\u0438\u0435 \u0440\u0430\u043a\u0430 \u0411\u043e\u043b\u044c\u043d\u0438\u0446\u044b \u0422\u043e\u043a\u0443\u0434\u0430'}
+2016-09-02 16:40:57 [scrapy] DEBUG: Scraped from <200 http://ru.bookimed.com/clinics/illness=melanoma/page=9/>
+{'name': u'\u041e\u0442\u0434\u0435\u043b\u0435\u043d\u0438\u0435 \u0440\u0430\u043a\u0430 \u0421\u0442\u0430\u043c\u0431\u0443\u043b\u044c\u0441\u043a\u043e\u0433\u043e \u0445\u0438\u0440\u0443\u0440\u0433\u0438\u0447\u0435\u0441\u043a\u043e\u0433\u043e \u0433\u043e\u0441\u043f\u0438\u0442\u0430\u043b\u044f'}
+2016-09-02 16:40:57 [scrapy] DEBUG: Scraped from <200 http://ru.bookimed.com/clinics/illness=melanoma/page=9/>
+{'name': u'\u041e\u0442\u0434\u0435\u043b\u0435\u043d\u0438\u0435 \u0440\u0430\u043a\u0430 \u041c\u0435\u0434\u0438\u0446\u0438\u043d\u0441\u043a\u043e\u0433\u043e \u0446\u0435\u043d\u0442\u0440\u0430 Wockhardt Hospital'}
+2016-09-02 16:40:57 [scrapy] DEBUG: Scraped from <200 http://ru.bookimed.com/clinics/illness=melanoma/page=9/>
+{'name': u'\u041e\u0442\u0434\u0435\u043b\u0435\u043d\u0438\u0435 \u0440\u0430\u043a\u0430 \u0427\u0430\u0441\u0442\u043d\u043e\u0439 \u043a\u043b\u0438\u043d\u0438\u043a\u0438 \u041b\u0435\u0435\u0445'}
+2016-09-02 16:40:57 [scrapy] DEBUG: Scraped from <200 http://ru.bookimed.com/clinics/illness=melanoma/page=9/>
+{'name': u'\u041e\u0442\u0434\u0435\u043b\u0435\u043d\u0438\u0435 \u0440\u0430\u043a\u0430 \u0411\u043e\u043b\u044c\u043d\u0438\u0447\u043d\u043e\u0433\u043e \u043a\u043e\u043c\u043f\u043b\u0435\u043a\u0441\u0430 \u0425\u0430\u0432\u0435\u043b\u0445\u0451\u044d'}
+2016-09-02 16:40:57 [scrapy] DEBUG: Scraped from <200 http://ru.bookimed.com/clinics/illness=melanoma/page=9/>
+{'name': u'\u041e\u0442\u0434\u0435\u043b\u0435\u043d\u0438\u0435 \u0440\u0430\u043a\u0430 \u0418\u043d\u0441\u0442\u0438\u0442\u0443\u0442\u0430 \u0445\u0438\u0440\u0443\u0440\u0433\u0438\u0438 \u041a\u0438\u0431\u0435\u0440 \u041d\u043e\u0436'}
+2016-09-02 16:40:57 [scrapy] DEBUG: Scraped from <200 http://ru.bookimed.com/clinics/illness=melanoma/page=9/>
+{'name': u'\u041e\u043d\u043a\u043e\u043b\u043e\u0433\u0438\u0447\u0435\u0441\u043a\u0438\u0439 \u0446\u0435\u043d\u0442\u0440 \u0413\u043e\u0441\u043f\u0438\u0442\u0430\u043b\u044f \u043f\u0440\u0438 \u0423\u043d\u0438\u0432\u0435\u0440\u0441\u0438\u0442\u0435\u0442\u0435 \u0421\u0443\u043d\u0447\u043e\u043d\u0445\u044f\u043d \u0432 \u0433\u043e\u0440\u043e\u0434\u0435 \u041f\u0443\u0447\u043e\u043d'}
+2016-09-02 16:40:57 [scrapy] DEBUG: Scraped from <200 http://ru.bookimed.com/clinics/illness=melanoma/page=9/>
+{'name': u'\u041e\u043d\u043a\u043e\u043b\u043e\u0433\u0438\u0447\u0435\u0441\u043a\u0438\u0439 \u0446\u0435\u043d\u0442\u0440 \u0423\u043d\u0438\u0432\u0435\u0440\u0441\u0438\u0442\u0435\u0442\u0441\u043a\u043e\u0433\u043e \u0413\u043e\u0441\u043f\u0438\u0442\u0430\u043b\u044f Marmara'}
+2016-09-02 16:40:57 [scrapy] DEBUG: Scraped from <200 http://ru.bookimed.com/clinics/illness=melanoma/page=9/>
+{'name': u'\u041e\u0442\u0434\u0435\u043b\u0435\u043d\u0438\u0435 \u0440\u0430\u043a\u0430 \u041a\u043b\u0438\u043d\u0438\u043a\u0438 \u041d\u044e\u0440\u043d\u0431\u0435\u0440\u0433'}
+2016-09-02 16:40:57 [scrapy] DEBUG: Crawled (200) <GET http://ru.bookimed.com/clinics/illness=melanoma/page=10/> (referer: http://ru.bookimed.com/clinics/illness=melanoma/page=9/)
+2016-09-02 16:40:57 [scrapy] DEBUG: Scraped from <200 http://ru.bookimed.com/clinics/illness=melanoma/page=10/>
+{'name': u'\u041e\u0442\u0434\u0435\u043b\u0435\u043d\u0438\u0435 \u0440\u0430\u043a\u0430 \u0425\u0440\u0438\u0441\u0442\u0438\u0430\u043d\u0441\u043a\u043e\u0433\u043e \u043c\u0435\u0434\u0438\u0446\u0438\u043d\u0441\u043a\u043e\u0433\u043e \u0433\u043e\u0441\u043f\u0438\u0442\u0430\u043b\u044f'}
+2016-09-02 16:40:57 [scrapy] DEBUG: Scraped from <200 http://ru.bookimed.com/clinics/illness=melanoma/page=10/>
+{'name': u'\u041e\u043d\u043a\u043e\u043b\u043e\u0433\u0438\u0447\u0435\u0441\u043a\u0438\u0439 \u0446\u0435\u043d\u0442\u0440 \u041c\u0435\u0436\u0434\u0443\u043d\u0430\u0440\u043e\u0434\u043d\u043e\u0433\u043e \u0433\u043e\u0441\u043f\u0438\u0442\u0430\u043b\u044f \u0411\u0443\u043c\u0440\u0443\u043d\u0433\u0440\u0430\u0434'}
+2016-09-02 16:40:57 [scrapy] DEBUG: Scraped from <200 http://ru.bookimed.com/clinics/illness=melanoma/page=10/>
+{'name': u'\u041e\u0442\u0434\u0435\u043b\u0435\u043d\u0438\u0435 \u0440\u0430\u043a\u0430 \u0413\u043e\u0441\u0443\u0434\u0430\u0440\u0441\u0442\u0432\u0435\u043d\u043d\u043e\u0439 \u0431\u043e\u043b\u044c\u043d\u0438\u0446\u044b \u042d\u0434\u0438\u0442 \u0412\u043e\u043b\u044c\u0444\u0441\u043e\u043d'}
+2016-09-02 16:40:57 [scrapy] DEBUG: Scraped from <200 http://ru.bookimed.com/clinics/illness=melanoma/page=10/>
+{'name': u'\u041e\u0442\u0434\u0435\u043b\u0435\u043d\u0438\u0435 \u0440\u0430\u043a\u0430 \u0427\u0430\u0441\u0442\u043d\u043e\u0439 \u043a\u043b\u0438\u043d\u0438\u043a\u0438 \u0419\u043e\u0437\u0435\u0444\u0448\u0442\u0430\u0434\u0442'}
+2016-09-02 16:40:57 [scrapy] DEBUG: Scraped from <200 http://ru.bookimed.com/clinics/illness=melanoma/page=10/>
+{'name': u'\u041e\u0442\u0434\u0435\u043b\u0435\u043d\u0438\u0435 \u0440\u0430\u043a\u0430 \u0416\u0435\u043d\u043e\u043b\u044c\u0435 \u043a\u043b\u0438\u043d\u0438\u043a\u0438'}
+2016-09-02 16:40:57 [scrapy] DEBUG: Scraped from <200 http://ru.bookimed.com/clinics/illness=melanoma/page=10/>
+{'name': u'\u041e\u0442\u0434\u0435\u043b\u0435\u043d\u0438\u0435 \u0440\u0430\u043a\u0430 \u0425\u0430\u0440\u043b\u0438 \u0421\u0442\u0440\u0438\u0442 \u041a\u043b\u0438\u043d\u0438\u043a\u0438'}
+2016-09-02 16:40:57 [scrapy] DEBUG: Scraped from <200 http://ru.bookimed.com/clinics/illness=melanoma/page=10/>
+{'name': u'\u041e\u0442\u0434\u0435\u043b\u0435\u043d\u0438\u0435 \u0440\u0430\u043a\u0430 \u041a\u043b\u0438\u043d\u0438\u043a\u0438 \u0421\u0432.\u041c\u0430\u0440\u0438\u0435\u043d\u0448\u0442\u0438\u0444\u0442'}
+2016-09-02 16:40:57 [scrapy] DEBUG: Scraped from <200 http://ru.bookimed.com/clinics/illness=melanoma/page=10/>
+{'name': u'\u041e\u0442\u0434\u0435\u043b\u0435\u043d\u0438\u0435 \u0440\u0430\u043a\u0430 \u041c\u0435\u0434\u0438\u0446\u0438\u043d\u0441\u043a\u043e\u0433\u043e \u0426\u0435\u043d\u0442\u0440\u0430 \u0420\u0430\u043c\u0430\u0442-\u0410\u0432\u0438\u0432'}
+2016-09-02 16:40:57 [scrapy] DEBUG: Scraped from <200 http://ru.bookimed.com/clinics/illness=melanoma/page=10/>
+{'name': u'\u041e\u0442\u0434\u0435\u043b\u0435\u043d\u0438\u0435 \u0440\u0430\u043a\u0430 \u041a\u043b\u0438\u043d\u0438\u043a\u0438 \u041c\u0430\u0440\u043a\u0443\u0441'}
+2016-09-02 16:40:57 [scrapy] DEBUG: Scraped from <200 http://ru.bookimed.com/clinics/illness=melanoma/page=10/>
+{'name': u'\u041e\u0442\u0434\u0435\u043b\u0435\u043d\u0438\u0435 \u0440\u0430\u043a\u0430 \u0413\u043e\u0441\u043f\u0438\u0442\u0430\u043b\u044f \u043f\u0440\u0438 \u0443\u043d\u0438\u0432\u0435\u0440\u0441\u0438\u0442\u0435\u0442\u0435 \u0421\u0443\u043d \u0427\u043e\u043d \u0425\u044f\u043d \u0432 \u0433\u043e\u0440\u043e\u0434\u0435 \u0421\u0435\u0443\u043b'}
+2016-09-02 16:40:57 [scrapy] DEBUG: Crawled (200) <GET http://ru.bookimed.com/clinics/illness=melanoma/page=11/> (referer: http://ru.bookimed.com/clinics/illness=melanoma/page=10/)
+2016-09-02 16:40:57 [scrapy] DEBUG: Scraped from <200 http://ru.bookimed.com/clinics/illness=melanoma/page=11/>
+{'name': u'\u041e\u0442\u0434\u0435\u043b\u0435\u043d\u0438\u0435 \u0440\u0430\u043a\u0430 \u0423\u0440\u043e\u043b\u043e\u0433\u0438\u0447\u0435\u0441\u043a\u043e\u0439 \u043a\u043b\u0438\u043d\u0438\u043a\u0438 \u041c\u044e\u043d\u0445\u0435\u043d\u2013\u041f\u043b\u0430\u043d\u0435\u0433\u0433'}
+2016-09-02 16:40:57 [scrapy] DEBUG: Scraped from <200 http://ru.bookimed.com/clinics/illness=melanoma/page=11/>
+{'name': u'\u041e\u0442\u0434\u0435\u043b\u0435\u043d\u0438\u0435 \u0440\u0430\u043a\u0430 \u0411\u043e\u043b\u044c\u043d\u0438\u0446\u044b \u0411\u0443\u043c\u0438\u043d \u0421\u0435\u0443\u043b'}
+2016-09-02 16:40:57 [scrapy] DEBUG: Scraped from <200 http://ru.bookimed.com/clinics/illness=melanoma/page=11/>
+{'name': u'\u041e\u0442\u0434\u0435\u043b\u0435\u043d\u0438\u0435 \u0440\u0430\u043a\u0430 \u0425\u0430\u0440\u043b\u0438 \u0421\u0442\u0440\u0438\u0442 \u0432 \u042e\u043d\u0438\u0432\u0435\u0440\u0441\u0438\u0442\u0438 \u041a\u043e\u043b\u043b\u0435\u0434\u0436 \u0425\u043e\u0441\u043f\u0438\u0442\u0430\u043b'}
+2016-09-02 16:40:57 [scrapy] DEBUG: Scraped from <200 http://ru.bookimed.com/clinics/illness=melanoma/page=11/>
+{'name': u'\u041e\u0442\u0434\u0435\u043b\u0435\u043d\u0438\u0435 \u0440\u0430\u043a\u0430 \u041a\u043b\u0438\u043d\u0438\u043a\u0438 \u0411\u0430\u0432\u0430\u0440\u0438\u044f \u041a\u0440\u0430\u0439\u0448\u0430'}
+2016-09-02 16:40:57 [scrapy] DEBUG: Scraped from <200 http://ru.bookimed.com/clinics/illness=melanoma/page=11/>
+{'name': u'\u041e\u0442\u0434\u0435\u043b\u0435\u043d\u0438\u0435 \u0440\u0430\u043a\u0430 \u0416\u0435\u043d\u0441\u043a\u043e\u0439 \u043a\u043b\u0438\u043d\u0438\u043a\u0438 \u041c\u0438\u0437 \u041c\u0435\u0434\u0438'}
+2016-09-02 16:40:57 [scrapy] DEBUG: Scraped from <200 http://ru.bookimed.com/clinics/illness=melanoma/page=11/>
+{'name': u'\u041e\u0442\u0434\u0435\u043b\u0435\u043d\u0438\u0435 \u0440\u0430\u043a\u0430 \u0411\u043e\u043b\u044c\u043d\u0438\u0446\u044b \u0411\u0435\u0442\u0430\u043d\u0438\u0435\u043d'}
+2016-09-02 16:40:57 [scrapy] DEBUG: Scraped from <200 http://ru.bookimed.com/clinics/illness=melanoma/page=11/>
+{'name': u'\u041e\u0442\u0434\u0435\u043b\u0435\u043d\u0438\u0435 \u0440\u0430\u043a\u0430 \u041f\u0440\u0438\u0432\u0430\u0442\u043d\u043e\u0439 \u043a\u043b\u0438\u043d\u0438\u043a\u0438 Goldenes Kreuz'}
+2016-09-02 16:40:57 [scrapy] DEBUG: Scraped from <200 http://ru.bookimed.com/clinics/illness=melanoma/page=11/>
+{'name': u'\u041e\u0442\u0434\u0435\u043b\u0435\u043d\u0438\u0435 \u0440\u0430\u043a\u0430 \u0411\u043e\u043b\u044c\u043d\u0438\u0446\u044b \u041f\u0444\u0430\u0439\u0444\u0444\u0435\u0440'}
+2016-09-02 16:40:57 [scrapy] DEBUG: Scraped from <200 http://ru.bookimed.com/clinics/illness=melanoma/page=11/>
+{'name': u'\u041e\u0442\u0434\u0435\u043b\u0435\u043d\u0438\u0435 \u0440\u0430\u043a\u0430 \u041c\u0435\u0434\u0438\u0446\u0438\u043d\u0441\u043a\u043e\u0433\u043e \u0446\u0435\u043d\u0442\u0440\u0430 \u0428\u0430\u0430\u0440\u0435\u0439 \u0426\u0435\u0434\u0435\u043a'}
+2016-09-02 16:40:57 [scrapy] DEBUG: Scraped from <200 http://ru.bookimed.com/clinics/illness=melanoma/page=11/>
+{'name': u'\u041e\u0442\u0434\u0435\u043b\u0435\u043d\u0438\u0435 \u0440\u0430\u043a\u0430 \u0411\u043e\u043b\u044c\u043d\u0438\u0446\u044b \u041b\u0435\u043e\u043f\u043e\u043b\u044c\u0434\u0438\u043d\u0430 \u0432 \u0428\u0432\u0430\u0439\u043d\u0444\u0443\u0440\u0442\u0435'}
+2016-09-02 16:40:58 [scrapy] DEBUG: Crawled (200) <GET http://ru.bookimed.com/clinics/illness=melanoma/page=12/> (referer: http://ru.bookimed.com/clinics/illness=melanoma/page=11/)
+2016-09-02 16:40:58 [scrapy] DEBUG: Scraped from <200 http://ru.bookimed.com/clinics/illness=melanoma/page=12/>
+{'name': u'\u041e\u0442\u0434\u0435\u043b\u0435\u043d\u0438\u0435 \u0440\u0430\u043a\u0430 \u0415\u0432\u0430\u043d\u0433\u0435\u043b\u0438\u0441\u0442\u0438\u0447\u0435\u0441\u043a\u043e\u0439 \u043c\u0435\u0434\u0438\u0446\u0438\u043d\u0441\u043a\u043e\u0439 \u043a\u043b\u0438\u043d\u0438\u043a\u0438 \u0425\u0443\u0431\u0435\u0440\u0442\u0443\u0441'}
+2016-09-02 16:40:58 [scrapy] DEBUG: Scraped from <200 http://ru.bookimed.com/clinics/illness=melanoma/page=12/>
+{'name': u'\u041e\u0442\u0434\u0435\u043b\u0435\u043d\u0438\u0435 \u0440\u0430\u043a\u0430 \u0415\u0432.\u0411\u043e\u043b\u044c\u043d\u0438\u0446\u044b \u0412\u0430\u043b\u044c\u0434\u043a\u0440\u0430\u043d\u043a\u0435\u043d\u0445\u0430\u0443\u0441'}
+2016-09-02 16:40:58 [scrapy] DEBUG: Scraped from <200 http://ru.bookimed.com/clinics/illness=melanoma/page=12/>
+{'name': u'\u041e\u0442\u0434\u0435\u043b\u0435\u043d\u0438\u0435 \u0440\u0430\u043a\u0430 \u041a\u043b\u0438\u043d\u0438\u043a\u0438 \u0425\u043e\u0445\u0442\u0430\u0443\u043d\u0443\u0441'}
+2016-09-02 16:40:58 [scrapy] DEBUG: Scraped from <200 http://ru.bookimed.com/clinics/illness=melanoma/page=12/>
+{'name': u'\u041e\u0442\u0434\u0435\u043b\u0435\u043d\u0438\u0435 \u0440\u0430\u043a\u0430 \u0423\u043d\u0438\u0432\u0435\u0440\u0441\u0438\u0442\u0435\u0442\u0441\u043a\u043e\u0439 \u043a\u043b\u0438\u043d\u0438\u043a\u0438 \u042d\u0441\u0441\u0435\u043d'}
+2016-09-02 16:40:58 [scrapy] DEBUG: Scraped from <200 http://ru.bookimed.com/clinics/illness=melanoma/page=12/>
+{'name': u'\u041e\u0442\u0434\u0435\u043b\u0435\u043d\u0438\u0435 \u0440\u0430\u043a\u0430 Elbland \u043a\u043b\u0438\u043d\u0438\u043a\u0438'}
+2016-09-02 16:40:58 [scrapy] DEBUG: Scraped from <200 http://ru.bookimed.com/clinics/illness=melanoma/page=12/>
+{'name': u'\u041e\u0442\u0434\u0435\u043b\u0435\u043d\u0438\u0435 \u0440\u0430\u043a\u0430 \u0414\u0435\u0442\u0441\u043a\u043e\u0433\u043e \u0433\u043e\u0441\u043f\u0438\u0442\u0430\u043b\u044f Sant Joan de Deu'}
+2016-09-02 16:40:58 [scrapy] DEBUG: Scraped from <200 http://ru.bookimed.com/clinics/illness=melanoma/page=12/>
+{'name': u'\u041e\u0442\u0434\u0435\u043b\u0435\u043d\u0438\u0435 \u0440\u0430\u043a\u0430 \u041c\u0435\u0434\u0438\u0446\u0438\u043d\u0441\u043a\u043e\u0433\u043e \u0426\u0435\u043d\u0442\u0440\u0430 \u043f\u0440\u0438 \u0416\u0435\u043d\u0441\u043a\u043e\u043c \u0423\u043d\u0438\u0432\u0435\u0440\u0441\u0438\u0442\u0435\u0442\u0435 \u0418\u0445\u0432\u0430'}
+2016-09-02 16:40:58 [scrapy] DEBUG: Scraped from <200 http://ru.bookimed.com/clinics/illness=melanoma/page=12/>
+{'name': u'\u041e\u043d\u043a\u043e\u043b\u043e\u0433\u0438\u0447\u0435\u0441\u043a\u0438\u0439 \u0446\u0435\u043d\u0442\u0440 \u041e\u043d\u043a\u043e\u043b\u043e\u0433\u0438\u0447\u0435\u0441\u043a\u043e\u0433\u043e \u0446\u0435\u043d\u0442\u0440\u0430 \u041f\u0430\u0440\u043a\u0432\u0435\u0439'}
+2016-09-02 16:40:58 [scrapy] DEBUG: Scraped from <200 http://ru.bookimed.com/clinics/illness=melanoma/page=12/>
+{'name': u'\u041e\u0442\u0434\u0435\u043b\u0435\u043d\u0438\u0435 \u0440\u0430\u043a\u0430 \u0415\u0432\u0430\u043d\u0433\u0435\u043b\u0438\u0447\u0435\u0441\u043a\u043e\u0439 \u043a\u043b\u0438\u043d\u0438\u043a\u0438 \u0437\u0430\u0431\u043e\u043b\u0435\u0432\u0430\u043d\u0438\u0439 \u043b\u0435\u0433\u043a\u0438\u0445'}
+2016-09-02 16:40:58 [scrapy] DEBUG: Scraped from <200 http://ru.bookimed.com/clinics/illness=melanoma/page=12/>
+{'name': u'\u041e\u0442\u0434\u0435\u043b\u0435\u043d\u0438\u0435 \u0440\u0430\u043a\u0430 \u0414\u043d\u0435\u0432\u043d\u043e\u0439 \u043a\u043b\u0438\u043d\u0438\u043a\u0438 \u0433\u0435\u043c\u0430\u0442\u043e\u043b\u043e\u0433\u0438\u0438 \u0438 \u043e\u043d\u043a\u043e\u043b\u043e\u0433\u0438\u0438 \u043f\u0440\u043e\u0444\u0435\u0441\u0441\u043e\u0440\u0430 \u0421\u0430\u043b\u0430\u0442'}
+2016-09-02 16:40:58 [scrapy] DEBUG: Crawled (200) <GET http://ru.bookimed.com/clinics/illness=melanoma/page=13/> (referer: http://ru.bookimed.com/clinics/illness=melanoma/page=12/)
+2016-09-02 16:40:58 [scrapy] DEBUG: Scraped from <200 http://ru.bookimed.com/clinics/illness=melanoma/page=13/>
+{'name': u'\u041e\u0442\u0434\u0435\u043b\u0435\u043d\u0438\u0435 \u0440\u0430\u043a\u0430 \u0415\u0432\u0440\u043e\u043f\u0435\u0439\u0441\u043a\u043e\u0433\u043e \u0426\u0435\u043d\u0442\u0440\u0430 \u041f\u0440\u043e\u0441\u0442\u0430\u0442\u044b'}
+2016-09-02 16:40:58 [scrapy] DEBUG: Scraped from <200 http://ru.bookimed.com/clinics/illness=melanoma/page=13/>
+{'name': u'\u041e\u0442\u0434\u0435\u043b\u0435\u043d\u0438\u0435 \u0440\u0430\u043a\u0430 \u041c\u0435\u0434\u0438\u0446\u0438\u043d\u0441\u043a\u043e\u0433\u043e \u0446\u0435\u043d\u0442\u0440\u0430 Neolife'}
+2016-09-02 16:40:58 [scrapy] DEBUG: Scraped from <200 http://ru.bookimed.com/clinics/illness=melanoma/page=13/>
+{'name': u'\u041e\u0442\u0434\u0435\u043b\u0435\u043d\u0438\u0435 \u0440\u0430\u043a\u0430 \u041a\u043b\u0438\u043d\u0438\u043a\u0438 \u041a\u0438\u0440\u043e\u043d \u041c\u0430\u0434\u0440\u0438\u0434'}
+2016-09-02 16:40:58 [scrapy] DEBUG: Scraped from <200 http://ru.bookimed.com/clinics/illness=melanoma/page=13/>
+{'name': u'\u041e\u0442\u0434\u0435\u043b\u0435\u043d\u0438\u0435 \u0440\u0430\u043a\u0430 \u041a\u043b\u0438\u043d\u0438\u043a\u0438 \u041a\u0438\u0440\u043e\u043d \u0411\u0430\u0440\u0441\u0435\u043b\u043e\u043d\u0430'}
+2016-09-02 16:40:58 [scrapy] DEBUG: Scraped from <200 http://ru.bookimed.com/clinics/illness=melanoma/page=13/>
+{'name': u'\u041e\u043d\u043a\u043e\u043b\u043e\u0433\u0438\u0447\u0435\u0441\u043a\u0438\u0439 \u0446\u0435\u043d\u0442\u0440 \u0424\u0440\u0430\u043d\u043a\u0444\u0443\u0440\u0442\u0441\u043a\u043e\u0439 \u0443\u043d\u0438\u0432\u0435\u0440\u0441\u0438\u0442\u0435\u0442\u0441\u043a\u043e\u0439 \u043a\u043b\u0438\u043d\u0438\u043a\u0438 \u0438\u043c. \u0418.\u0412. \u0413\u0451\u0442\u0435'}
+2016-09-02 16:40:58 [scrapy] ERROR: Spider error processing <GET http://ru.bookimed.com/clinics/illness=melanoma/page=13/> (referer: http://ru.bookimed.com/clinics/illness=melanoma/page=12/)
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/usr/local/lib/python2.7/dist-packages/scrapy/spidermiddlewares/offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "/usr/local/lib/python2.7/dist-packages/scrapy/spidermiddlewares/referer.py", line 22, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/usr/local/lib/python2.7/dist-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python2.7/dist-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/home/alice/dataroot/bookimed/site_position/site_position/spiders/go_med.py", line 24, in parse
+    url = response.urljoin(response.xpath('//ul[@class="pagination"]/li[@class="next"]/a/@href').extract()[0])
+IndexError: list index out of range
+2016-09-02 16:40:58 [scrapy] INFO: Closing spider (finished)
+2016-09-02 16:40:58 [scrapy] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 10841,
+ 'downloader/request_count': 14,
+ 'downloader/request_method_count/GET': 14,
+ 'downloader/response_bytes': 322157,
+ 'downloader/response_count': 14,
+ 'downloader/response_status_count/200': 14,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2016, 9, 2, 13, 40, 58, 497274),
+ 'item_scraped_count': 125,
+ 'log_count/DEBUG': 140,
+ 'log_count/ERROR': 1,
+ 'log_count/INFO': 7,
+ 'request_depth_max': 12,
+ 'response_received_count': 14,
+ 'scheduler/dequeued': 13,
+ 'scheduler/dequeued/memory': 13,
+ 'scheduler/enqueued': 13,
+ 'scheduler/enqueued/memory': 13,
+ 'spider_exceptions/IndexError': 1,
+ 'start_time': datetime.datetime(2016, 9, 2, 13, 40, 52, 488114)}
+2016-09-02 16:40:58 [scrapy] INFO: Spider closed (finished)
