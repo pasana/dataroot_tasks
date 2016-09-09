@@ -30,18 +30,17 @@ def get_X_y_from(t_extract_data, t_data, t_estims_data):
 
 # In[ ]:
 
-def get_X_from(t_data):
+def get_X_from(t_data, t_extract_data):
     t_cleaned_data = []
     clinic_names = []
     ids = []
     for i in t_data:
         if i['doctors']!=[]:
-            t_cleaned_data += [extract_data(i,[])]
+            t_cleaned_data += [t_extract_data(i,[])]
             clinic_names += [unicode(i['name_ru'])] * len(i['doctors'])
             ids += [int(i['id'])] * len(i['doctors'])
     X = sum([i for i in t_cleaned_data],[])
     return X, clinic_names, ids
-
 
 # In[7]:
 
