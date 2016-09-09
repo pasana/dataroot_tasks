@@ -6,6 +6,7 @@
 import json
 import matplotlib.pyplot as plt
 import numpy as np
+import pandas as pd
 from sklearn import datasets, linear_model
 from sklearn import preprocessing
 from sklearn import cross_validation
@@ -42,7 +43,19 @@ def get_X_from(t_data):
     X = sum([i for i in t_cleaned_data],[])
     return X, clinic_names, ids
 
+def get_best_ts(X, y):
+    results = pd.DataFrame(columns = ['variance_train', 'variance_test', 'absolute_train', 'absolute_test', 'ts'])
+    for i in range(1,7):
+        regr = process_with(X, y, return_long=True, ts=i/10.0)
+        if ((regr['variance_train'] == 1) and (round(regr['absolute_train'],2) == 0)): continue
+        results = results.append(regr,ignore_index=True)
+        results['score'] = results.apply(lambda row: abs(((row['absolute_train'] + row['absolute_test'])/2.0)/
+                                 ((1 - row['variance_train'])/2.0)*
+                                 ((1 - row['variance_test']/2.0)))*
+                                 abs((row['absolute_train'] - row['absolute_test'])), axis=1)
 
+    if len(results): return results['ts'][results['score'].argmin()]
+    else: return 0
 # In[7]:
 
 def process_with(X,y, info=False, short=False, return_short = False, new_coef = [], ts=0.2):
