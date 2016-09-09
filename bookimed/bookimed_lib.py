@@ -1,12 +1,11 @@
 
 # coding: utf-8
 
-# In[ ]:
+# In[1]:
 
 import json
 import matplotlib.pyplot as plt
 import numpy as np
-import pandas as pd
 from sklearn import datasets, linear_model
 from sklearn import preprocessing
 from sklearn import cross_validation
@@ -16,7 +15,8 @@ from sklearn import cross_validation
 
 path_1 = './max/'
 path_2 = './max20160907'
-this_path = path_2
+
+this_path = path_1
 
 
 # In[3]:
@@ -29,7 +29,7 @@ def get_X_y_from(t_extract_data, t_data, t_estims_data):
     return X,y
 
 
-# In[ ]:
+# In[4]:
 
 def get_X_from(t_data, t_extract_data):
     t_cleaned_data = []
@@ -42,6 +42,9 @@ def get_X_from(t_data, t_extract_data):
             ids += [int(i['id'])] * len(i['doctors'])
     X = sum([i for i in t_cleaned_data],[])
     return X, clinic_names, ids
+
+
+# In[ ]:
 
 def get_best_ts(X, y):
     results = pd.DataFrame(columns = ['variance_train', 'variance_test', 'absolute_train', 'absolute_test', 'ts'])
@@ -57,7 +60,8 @@ def get_best_ts(X, y):
     if len(results): return results['ts'][results['score'].argmin()]
     else: return 0
 
-# In[7]:
+
+# In[5]:
 
 def process_with(X,y, info=False, short=False, return_short = False, new_coef = [], ts=0.2):
     train_X, test_X, train_y, test_y = cross_validation.train_test_split(X, y, test_size = ts, random_state = 3)
@@ -89,7 +93,7 @@ def process_with(X,y, info=False, short=False, return_short = False, new_coef = 
     return regr
 
 
-# In[ ]:
+# In[6]:
 
 def pack(X, gd, ed, gp):
     new_X = []
@@ -103,7 +107,7 @@ def pack(X, gd, ed, gp):
     return new_X
 
 
-# In[ ]:
+# In[7]:
 
 def seq_procent(input_array):
     new_pos=np.array(input_array)
@@ -117,12 +121,11 @@ def seq_procent(input_array):
     return 100*len(new_pos)/float(len(input_array))
 
 
-# In[6]:
+# In[8]:
 
 def get_X_sets(extract_data):
     X_all, y_all = [], []
 
-    this_path = path_2
     with open('./max/estims.json') as data_file: 
         estims_data = json.load(data_file)[2]['clinics']
     with open('%s/меланома_все.json'%this_path) as data_file: #2
@@ -166,4 +169,61 @@ def get_X_sets(extract_data):
     y_all+=y_5
     
     return X_all, X_1, X_2, X_3, X_4, X_5, y_all, y_1, y_2, y_3, y_4, y_5
+
+
+# In[12]:
+
+def get_clinic_names(t_estims_data, t_cancer_data):
+    ids = [i['id'] for i in t_estims_data]
+    if '0' in ids:
+        ids.pop('0')
+    clinic_names = []
+    for id_ in ids:
+        clinic_names += [ i["name_ru"] for i in t_cancer_data if i['id'] == id_ and len(i['doctors'])!= 0]
+    return clinic_names
+
+# In[14]:
+
+def get_clinic_names_all():
+    X_all, y_all = [], []
+
+    with open('./max/estims.json') as data_file: 
+        estims_data = json.load(data_file)[2]['clinics']
+    with open('%s/меланома_все.json'%this_path) as data_file: #2
+        cancer_data = json.load(data_file)[0]['clinics']
+    clinic_names_1 = get_clinic_names(estims_data, cancer_data)
+
+    with open('./max/estims.json') as data_file: 
+        estims_data = json.load(data_file)[0]['clinics']
+    with open('%s/рак_груди_все.json'%this_path) as data_file: #0
+        cancer_data = json.load(data_file)[0]['clinics']
+    clinic_names_2 = get_clinic_names(estims_data, cancer_data)
+
+    with open('./max/estims.json') as data_file: 
+        estims_data = json.load(data_file)[4]['clinics']    
+    with open('%s/рак_простаты_все.json'%this_path) as data_file: #4
+        cancer_data = json.load(data_file)[0]['clinics']
+    clinic_ids = [i['id'] for i in estims_data]
+    estims_data.pop(clinic_ids.index('0'))
+    clinic_names_3 = get_clinic_names(estims_data, cancer_data)
+
+    with open('./max/estims.json') as data_file: 
+        estims_data = json.load(data_file)[1]['clinics']     
+    with open('%s/рак_шейки_матки_все.json'%this_path) as data_file: #1
+        cancer_data = json.load(data_file)[0]['clinics']
+    clinic_names_4 = get_clinic_names(estims_data, cancer_data)
+
+    with open('./max/estims.json') as data_file: 
+        estims_data = json.load(data_file)[3]['clinics']         
+    with open('%s/рак_щитовидки_все.json'%this_path) as data_file: #3
+        cancer_data = json.load(data_file)[0]['clinics']
+    clinic_names_5 = get_clinic_names(estims_data, cancer_data)
+
+    
+    return clinic_names_1 + clinic_names_2 + clinic_names_3 + clinic_names_4 + clinic_names_5
+
+
+# In[ ]:
+
+
 
