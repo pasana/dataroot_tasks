@@ -6,9 +6,32 @@
 import json
 import matplotlib.pyplot as plt
 import numpy as np
+import pandas as pd
 from sklearn import datasets, linear_model
 from sklearn import preprocessing
 from sklearn import cross_validation
+
+#new_ones
+gd = [-0.14858283,  0.82626225,  0.72419524,  0.38033358, -0.41910666, -0.0017822, 8.504 ]
+gd_1 = [ 0.38720291,  0.6170334 ,  1.3575343 ,  0.06852735,  0.2979859 , 0.01196117, 7.98339173738]
+gd_2 = [-0.34151137, -0.43818642,  1.48721481, -0.65192724,  0.55046177, 0.01478482, 8.28216808672]
+gd_3 = [ 0.22044356, -0.03968407, -0.2108969 ,  0.25643846,  0.17997737, 0.00104368, 7.83839721743]
+gd_4 = [  5.08011543e-01,   9.61926105e-01,   1.18588486e+00, -1.22263084e-01,  -9.58909993e-01,  -7.53080350e-04, 8.31196433005]
+gd_5 = [ -3.31640563e-01,   7.05312018e-02,   7.66855734e-01, 4.78101072e-16,   1.30142649e-01,   1.54756015e-03, 8.46744569939]
+
+ed = [-0.2529,-0.5355,-0.2411,0.1319,8.84130721381]
+ed_1 = [1.2004,-2.1618,0.0,1.6412,8.67028085972]
+ed_2 = [-1.1872,1.3869,0.0,-0.5365,8.70100044872]
+ed_3 = [-1.368,0.5593,0.0,0.4327,7.9939688955]
+ed_4 = [-2.5859,1.1579,-0.2749,0.0117,9.88449832052]
+ed_5 = [-1.4355,0.2174,0.0,0.0907,8.85713476559]
+
+gp = [ -5.79394428, -16.03602744,  16.81469781,  14.56978414]
+gp_1 = [ -8.40030539, -11.98444574,  18.38346948,  10.71352994]
+gp_2 = [-10.17055835,  -2.9336299 ,  22.35123782,   0.54050688]
+gp_3 = [ -0.25488576, -21.560419  ,  13.17436164,  17.98284953]
+gp_4 = [ -5.00790327, -13.37337951,  15.23204126,  13.27778045]
+gp_5 = [ -8.26148188, -12.47220116,  20.91674746,   7.82969123]
 
 
 # In[2]:
@@ -16,7 +39,7 @@ from sklearn import cross_validation
 path_1 = './max/'
 path_2 = './max20160907'
 
-this_path = path_1
+this_path = path_2
 
 
 # In[3]:
@@ -63,7 +86,7 @@ def get_best_ts(X, y):
 
 # In[5]:
 
-def process_with(X,y, info=False, short=False, return_short = False, new_coef = [], ts=0.2):
+def process_with(X,y, info=False, short=False, return_short = False, return_long = False, new_coef = [], ts=0.2):
     train_X, test_X, train_y, test_y = cross_validation.train_test_split(X, y, test_size = ts, random_state = 3)
     regr = linear_model.LinearRegression(fit_intercept=True, normalize=False)
     if new_coef != []:
@@ -87,11 +110,17 @@ def process_with(X,y, info=False, short=False, return_short = False, new_coef = 
         print "%.3f" % regr.score(test_X, test_y)
     if return_short:
         return np.mean(abs(regr.predict(test_X) - test_y)),regr.score(test_X, test_y)
-    for i in regr.coef_:
-        print "%.3f" % i
+    if return_long:
+        return {"absolute_train": np.mean(abs(regr.predict(train_X) - train_y)),
+               "absolute_test": np.mean(abs(regr.predict(test_X) - test_y)),
+               "variance_train": regr.score(train_X, train_y),
+               "variance_test": regr.score(test_X, test_y),
+               ""
+               "ts": ts}
+    #for i in regr.coef_:
+        #print "%.3f" % i
     #print "%.3f" % regr.intercept_
     return regr
-
 
 # In[6]:
 
@@ -187,7 +216,6 @@ def get_clinic_names(t_estims_data, t_cancer_data):
 def get_clinic_names_all():
     X_all, y_all = [], []
 
-    this_path = path_2
     with open('./max/estims.json') as data_file: 
         estims_data = json.load(data_file)[2]['clinics']
     with open('%s/меланома_все.json'%this_path) as data_file: #2
