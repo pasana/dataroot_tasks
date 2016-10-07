@@ -1,0 +1,68 @@
+# -*- coding: utf-8 -*-
+import scrapy
+import os, time
+from site_position.items import SitePositionItem
+from selenium import selenium
+from selenium import webdriver
+
+class go_rewiewSpider(scrapy.Spider):
+    name = "go_rewiew"
+    allowed_domains = ["ru.bookimed.com"]
+    start_urls = (
+        'http://ru.bookimed.com/clinics',
+#        'http://ru.bookimed.com/clinic/klinika-assuta/',
+    )
+
+    def parse(self, response):
+        total = response.xpath('//span[@id="clinics_list"]/div')
+        clinic_name = total[0].xpath('//div[@class="title clinic-title"]/div/a/@href').extract()
+        for c in clinic_name:
+            item = SitePositionItem()
+            print c
+            url = response.urljoin(c)
+            yield scrapy.Request(url, callback=self.parse_review, dont_filter=True)
+        url = response.urljoin(response.xpath('//ul[@class="pagination"]/li[@class="next"]/a/@href').extract()[0])
+        yield scrapy.Request(url, callback=self.parse, dont_filter=True)
+
+    def parse_review(self, response):
+        print "!!!!"
+        #print response.url
+        print "!!!!"
+	chromedriver = "/home/alice/chromedriver"
+	os.environ["webdriver.chrome.driver"] = chromedriver
+	driver = webdriver.Chrome(chromedriver)
+        driver.get(response.url)
+        time.sleep(2)
+        clinic_id = driver.find_element_by_xpath('//input[@id="dr_clinic_id"]').get_attribute("value")
+        print driver.find_element_by_xpath('//a[@class="sn-review part1"]').text
+        while True:
+            next = driver.find_element_by_xpath('//a[@id="get_more_reviews"]')
+            try:
+                next.click()
+                print "clicked"
+                # get the data and write it to scrapy items
+            except:
+                "not"
+                break
+        time.sleep(2)
+        reviews = driver.find_elements_by_xpath('//span[@id="reviews_container"]/div')
+        time.sleep(2)
+        for r in reviews:
+            item = SitePositionItem()
+            item['clinic_id'] = clinic_id
+            item['name'] = r.find_element_by_xpath('div[1]/div/a').text #name
+            item['date'] = r.find_element_by_xpath('div[1]/div[2]').text #date
+            item['full_rate'] = r.find_element_by_xpath('div[1]/div[3]').text #full rate
+            item['rate_num'] = r.find_element_by_xpath('div[1]/div[3]/span[1]').text #?/10
+            item['good'] = r.find_element_by_xpath('div[1]/div[4]').text #good
+            item['bad'] = r.find_element_by_xpath('div[1]/div[5]').text #bad
+#            try:
+            print r.find_element_by_xpath('div[3]').text #review
+            print r.find_element_by_xpath('div[4]').text #review
+            r.find_element_by_xpath('a[@class="btn_close has-pointer"]').click()
+            driver.find_element_by_xpath('a[@class="popap register_popap"]/a').click()
+            r.find_element_by_xpath('div[3]/a').click()
+            time.sleep(2)
+#            except:
+            item['review'] = r.find_element_by_xpath('div[4]').text #review
+            yield item
