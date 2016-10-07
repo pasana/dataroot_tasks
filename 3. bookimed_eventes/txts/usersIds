@@ -1,0 +1,55 @@
+import os
+import glob
+import json
+
+files = [os.path.basename(x) for x in glob.glob('./un_users/*.json')]
+
+data = []
+
+for file_name in files:
+    f = open('./users/%s'%file_name)
+    context = f.readlines()
+    ids = []
+    for i in context[:]:
+        ids += [json.loads(i.replace(',\n','').replace('\n',''))['userId']]
+    data += [ids]
+
+n_data = [set(i) for i in data]
+set([len(i) for i in n_data])
+{1, 2, 3}
+
+dd = [i for i in n_data if not (None in i) ]
+dd_2 = [i for i in dd if len(i)>1]
+u_3 = [i for i in n_dataata if len(i)>2]
+u_3
+
+[{None, u'17250', u'18026'},
+ {None, u'13971', u'17236'},
+ {None, u'10939', u'35'},
+ {None, u'10109', u'10110'},
+ {None, u'18380', u'18382'},
+ {None, u'10939', u'35'},
+ {None, u'10939', u'282'},
+ {None, u'10939', u'35'},
+ {None, u'10939', u'35'},
+ {None, u'10939', u'35'}]
+
+ids = [i for i,x in enumerate(n_data) if x in u_3]
+print ids
+
+[2561, 10125, 16503, 23019, 24002, 26050, 28711, 33355, 45737, 45978]
+
+for i in ids:
+    print files[i]
+
+0e83aac1-788b-499d-8145-9a6150200945.json
+53fac641-4f4d-4f9b-ad75-ee014f7362c5.json
+03eb44c3-8a89-4d3c-91fa-8a9dad5514bc.json
+ffb5f1f9-2383-49b1-bae1-0a6052740c5e.json
+2dba458b-6a59-4d2a-93d8-ecf58456c1d0.json
+409c87f6-4bf3-429b-8415-e25509e55f8e.json
+6de43e1b-8b17-4613-abac-99e35f225ffb.json
+7a8db671-14a1-4bb7-8e5b-bb4407185692.json
+49f79c93-7ee3-45a9-aa8a-71108be1b496.json
+f1804c27-930f-405b-8058-1d30d340c1db.json
+

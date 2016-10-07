@@ -1,0 +1,113 @@
+15.09.16
+
+2) решила систематизировать, разбить на итерации и выделить основные пункты
+
+1) Словари для пользователей нужно сделать минимальными и наиболее плоскими.
+Главная проблема в properties и library. Тогда посмотрим, что это за штуки и что в них есть.
+
+properties
+
+all: 1 354 432
+not page's: 241 374
+
+how much {u'button_type': u'auto_help'}?
+Can we choose the best clinic for you?
+
+128915
+
+241374-128915=112459
+
+{u'button_type': u'clinic_get_cost', u'clinic_id': 255}
+
+among them:
+57407 - [u'button_type', u'clinic_id']
+29359 - [u'button_type', u'last_illness', u'clinic_id', u'last_illness_kind']
+25680 - [u'button_type']
+
+112446
+
+
+libraries all: 1377052
+{u'name': u'analytics.js', u'version': u'2.11.1'}
+1377052
+ u'originalTimestamp': u'2015-11-09T18:27:29.657Z',
+13 - ?
+
+[{u'gaId': u'703686901.1448986554',
+  u'path': u'/Users/maxsilent/Work/dataroot.co/index.html',
+  u'referrer': u'',
+  u'search': u'',
+  u'title': u'DataRoot',
+  u'url': u'file:///Users/maxsilent/Work/dataroot.co/index.html'},
+ {u'gaId': u'405762502.1448986560',
+  u'path': u'/Users/maxsilent/Work/dataroot.co/index.html',
+  u'referrer': u'',
+  u'search': u'',
+  u'title': u'DataRoot',
+  u'url': u'file:///Users/maxsilent/Work/dataroot.co/index.html'},
+ {u'gaId': u'2004568688.1448986572',
+  u'path': u'/Users/maxsilent/Work/dataroot.co/index.html',
+  u'referrer': u'',
+  u'search': u'',
+  u'title': u'DataRoot',
+  u'url': u'file:///Users/maxsilent/Work/dataroot.co/index.html'},
+ {u'gaId': u'2102573974.1448986646',
+  u'path': u'/Users/maxsilent/Work/dataroot.co/index.html',
+  u'referrer': u'',
+  u'search': u'',
+  u'title': u'DataRoot',
+  u'url': u'file:///Users/maxsilent/Work/dataroot.co/index.html'},
+ {u'gaId': u'312533903.1448986738',
+  u'path': u'/Users/maxsilent/Work/dataroot.co/index.html',
+  u'referrer': u'',
+  u'search': u'',
+  u'title': u'DataRoot',
+  u'url': u'file:///Users/maxsilent/Work/dataroot.co/index.html'},
+ {u'gaId': u'1867204731.1448986777',
+  u'path': u'/Users/maxsilent/Work/dataroot.co/index.html',
+  u'referrer': u'',
+  u'search': u'',
+  u'title': u'DataRoot',
+  u'url': u'file:///Users/maxsilent/Work/dataroot.co/index.html'},
+ {u'gaId': u'1613675661.1448986823',
+  u'path': u'/Users/maxsilent/Work/dataroot.co/index.html',
+  u'referrer': u'',
+  u'search': u'',
+  u'title': u'DataRoot',
+  u'url': u'file:///Users/maxsilent/Work/dataroot.co/index.html'},
+ {u'gaId': u'41127899.1448986839',
+  u'path': u'/Users/maxsilent/Work/dataroot.co/index.html',
+  u'referrer': u'',
+  u'search': u'',
+  u'title': u'DataRoot',
+  u'url': u'file:///Users/maxsilent/Work/dataroot.co/index.html'},
+ {u'gaId': u'914951966.1448986956',
+  u'path': u'/Users/maxsilent/Work/dataroot.co/index.html',
+  u'referrer': u'',
+  u'search': u'',
+  u'title': u'DataRoot',
+  u'url': u'file:///Users/maxsilent/Work/dataroot.co/index.html'},
+ {u'gaId': u'1740699367.1448986997',
+  u'path': u'/Users/maxsilent/Work/dataroot.co/index.html',
+  u'referrer': u'',
+  u'search': u'',
+  u'title': u'DataRoot',
+  u'url': u'file:///Users/maxsilent/Work/dataroot.co/index.html'},
+ {u'gaClientId': u'1549404628.1443882102',
+  u'path': u'/',
+  u'referrer': u'',
+  u'search': u'',
+  u'title': u'Treatment abroad \u2013 reviews, best clinics and prices| BOOKIMED',
+  u'url': u'http://bookimed.com/'},
+ {u'gaClientId': u'1549404628.1443882102',
+  u'path': u'/',
+  u'referrer': u'',
+  u'search': u'',
+  u'title': u'Treatment abroad \u2013 reviews, best clinics and prices| BOOKIMED',
+  u'url': u'http://bookimed.com/'},
+ {u'path': u'/',
+  u'q': 1,
+  u'referrer': u'',
+  u'search': u'',
+  u'title': u'Treatment abroad \u2013 reviews, best clinics and prices| BOOKIMED',
+  u'url': u'http://bookimed.com/'}]
